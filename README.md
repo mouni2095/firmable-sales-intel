@@ -69,8 +69,8 @@ raw .zst NDJSON ──(1) extract──▶ slim Parquet ──(2) resolve orgs�
 ## How I measured whether it works
 - **Held-out set:** 150 accounts, stratified random (75 need ≥ 0.6, 75 need 0.3–0.6), seeded by hash. They were never used to tune prompts or weights (`eval/`).
 - **Labels:** independent of the model. Each account was researched on the web (search results about the domain or organisation) and labelled for organisation type, industry, whether the asset is really theirs, and whether it's a good prospect. Labellers never saw the model's output.
-  - **Disclosure:** the labelling was done by AI research agents (Claude) using web search, not by hand. 46 of 93 identifiable labels cite a search result; 47 rest on the agent's own knowledge of well-known organisations. 57/150 accounts could not be identified and are excluded from the metrics, not counted as wins.
-  - **Human spot-check of 25 labels:** _agreement to be filled in (eval/spot_check.xlsx)_.
+  - **Disclosure:** first-pass labels came from LLM research agents using web search, not by hand. 46 of 93 identifiable labels cite a search result; 47 rest on the agent's own knowledge of well-known organisations. 57/150 accounts could not be identified and are excluded from the metrics, not counted as wins.
+  - **Human spot-check:** I checked 25 randomly chosen labels myself (site or web search). I agreed with all 21 I could decide; 4 were "can't tell" (`eval/spot_check.xlsx`). That's a small check, so it supports but does not prove label quality.
 - **Circularity:** the labeller had *new information* (web results) that the classifier never saw. The ranking check measures the end decision (rank / review / exclude), not just agreement between two models.
 
 | Check (`eval/evaluate.py`, `eval/evaluate_ranking.py`) | Result |
@@ -113,7 +113,7 @@ A clean re-run reproduced the reported counts exactly (448,322 organisations, 13
 - One snapshot: the timing signal needs the monthly diff above.
 
 ## How it was built (AI-native dev loop)
-Built with Claude as an agentic pair-programmer (it ran the queries, wrote the SQL and code, and I reviewed the results and steered). The loop was: profile → hypothesise → query → read the top of the output → fix.
+Built with an AI coding agent in the loop: the agent ran queries and drafted the SQL and code, and I reviewed the results and made the calls. The loop was: profile → hypothesise → query → read the top of the output → fix.
 - The raw data was explored interactively before any model was involved: field inventory, value counts, sampled banners. The traps above came from inspecting rows, not from handing the file to an LLM.
 - Every rule was checked against real rows. Examples: the RAT-module trap (banner emptiness), the CVE backport trap (CPE distribution of the top KEV CVEs), and the regex bug (the top-30 list).
 - LLM use is narrow and measured: one classification step with schema validation, cost logging, abstention, and evaluation against independent labels.

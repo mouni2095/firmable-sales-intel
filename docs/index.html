@@ -215,7 +215,7 @@ function renderMethod(){
    <li><b>Version-inferred CVEs</b>: only ~0.04% are verified. Apache CVE-2021-40438 and CVE-2024-38475 are mostly inferred on CentOS/Ubuntu builds that backport fixes, so they're discounted ×0.3. CVE-2023-44487 (HTTP/2) appears on 173k rows and is ignored. SMBGhost (CVE-2020-0796) is <i>verified</i> on 1,038 hosts and carries full weight.</li>
    <li><b>CDN edges</b> carry the CDN's software, not the customer's, so they never count as exposures.</li></ul>
   <h2>Does it work?</h2>
-  <p>Independent labels on a held-out stratified random sample of 150 accounts (75 high-need, 75 mid-need). These were never used to tune prompts or weights. Labels came from web research and do not use the model's output.</p>
+  <p>Independent labels on a held-out stratified random sample of 150 accounts (75 high-need, 75 mid-need). These were never used to tune prompts or weights. Labels came from web research by LLM research agents and do not use the classifier's output. A human spot-check of 25 labels agreed with all 21 that could be decided.</p>
   <table><tr><th>Check</th><th>Result</th></tr>
    <tr><td>Ranked accounts judged a good prospect</td><td>85% (23/27 decided labels)</td></tr>
    <tr><td>Excluded accounts that were truly not prospects</td><td>100% (43/43)</td></tr>
