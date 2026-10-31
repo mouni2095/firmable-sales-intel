@@ -1,7 +1,7 @@
 """Export ranked + needs-review accounts (with evidence and assets) to app/data.json."""
 import json, duckdb, sys
 db = sys.argv[1] if len(sys.argv) > 1 else 'pipeline/firmable.duckdb'
-out = sys.argv[2] if len(sys.argv) > 2 else 'app/data.json'
+out = sys.argv[2] if len(sys.argv) > 2 else 'docs/data.json'
 con = duckdb.connect(db, read_only=True)
 rows = con.execute("""
 WITH assets AS (

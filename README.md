@@ -25,7 +25,7 @@ Open **Ranked accounts** and filter by tier, industry, country, signal (e.g. *Re
 ```
 raw .zst NDJSON ──(1) extract──▶ slim Parquet ──(2) resolve orgs──▶ (3) signals ──▶ (4) need score
                                                                                          │
-                                       app/data.json ◀──(6) rank: need × fit ◀──(5) LLM classify
+                                       docs/data.json ◀──(6) rank: need × fit ◀──(5) LLM classify
 ```
 
 1. **Extract** (`pipeline/sql/01_extract.sql`). This is one streaming DuckDB pass with a typed schema, so only the needed fields are parsed. 17.6 GB becomes 0.74 GB of Parquet in **185 s on a laptop**.
@@ -101,7 +101,7 @@ python pipeline/run_pipeline.py "data/slim/*.parquet" pipeline/firmable.duckdb  
 python llm/make_candidates.py pipeline/firmable.duckdb llm/candidates.jsonl
 python llm/classify.py llm/candidates.jsonl llm/classified.jsonl anthropic_key.txt 12
 python pipeline/run_pipeline.py "data/slim/*.parquet" pipeline/firmable.duckdb llm/classified.jsonl
-python pipeline/export_app_data.py && python -m http.server -d app                 # app
+python pipeline/export_app_data.py && python -m http.server -d docs                # app
 python eval/evaluate.py && python eval/evaluate_ranking.py                         # metrics
 ```
 A clean re-run reproduced the reported counts exactly (448,322 organisations, 13,474 candidates).
