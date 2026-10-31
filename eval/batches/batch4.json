@@ -1,0 +1,640 @@
+[
+ {
+  "id": 5,
+  "domain": "skindard.com",
+  "country": "KR",
+  "hostnames": [
+   "www.shop.skindard.com",
+   "shop.skindard.com"
+  ],
+  "page_titles": [
+   "스킨다드몰"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "Korea Telecom"
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2021-40438",
+   "legacy_tls: port 443"
+  ]
+ },
+ {
+  "id": 10,
+  "domain": "ip-51-68-139.eu",
+  "country": "PL",
+  "hostnames": [
+   "45.ip-51-68-139.eu"
+  ],
+  "page_titles": [
+   "Autoryzacja użytkownika"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "OVH Sp. z o. o."
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2021-40438"
+  ]
+ },
+ {
+  "id": 15,
+  "domain": "zhiyun-tech.com",
+  "country": "CN",
+  "hostnames": [
+   "zhiyun-tech.com"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "Aliyun Computing Co., LTD"
+  ],
+  "evidence": [
+   "end_of_life: nginx",
+   "legacy_tls: port 443"
+  ]
+ },
+ {
+  "id": 20,
+  "domain": "floutwork.com",
+  "country": "US",
+  "hostnames": [
+   "floutwork.com"
+  ],
+  "page_titles": [
+   "Floutwork"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "Amazon.com, Inc."
+  ],
+  "evidence": [
+   "end_of_life: nginx",
+   "legacy_tls: port 443"
+  ]
+ },
+ {
+  "id": 25,
+  "domain": "synapsecore.com",
+  "country": "US",
+  "hostnames": [
+   "aspera.sandbox.synapsecore.com"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "Amazon.com, Inc."
+  ],
+  "evidence": [
+   "end_of_life: nginx",
+   "expired_cert: port 443"
+  ]
+ },
+ {
+  "id": 30,
+  "domain": "vaughansofmaidstone.co.uk",
+  "country": "GB",
+  "hostnames": [
+   "vaughansofmaidstone.co.uk"
+  ],
+  "page_titles": [
+   "Vaughans of Maidstone &#8211; Fireplace specialists since 1815"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "Heart Internet limited"
+  ],
+  "evidence": [
+   "end_of_life: http",
+   "kev: CVE-2026-87902"
+  ]
+ },
+ {
+  "id": 35,
+  "domain": "tvluxe.shop",
+  "country": "BR",
+  "hostnames": [
+   "r0ox.tvluxe.shop",
+   "tvluxe.shop"
+  ],
+  "page_titles": [
+   "Notes "
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "ipbnb"
+  ],
+  "evidence": [
+   "end_of_life: Apache httpd",
+   "kev_ransomware: CVE-2021-40438"
+  ]
+ },
+ {
+  "id": 40,
+  "domain": "vahala.cz",
+  "country": "CZ",
+  "hostnames": [
+   "mail.vahala.cz"
+  ],
+  "page_titles": [
+   "firma.local"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "O2 Czech Republic, a.s."
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2021-40438"
+  ]
+ },
+ {
+  "id": 45,
+  "domain": "aceitecoco.fun",
+  "country": "DE",
+  "hostnames": [
+   "iba.aceitecoco.fun",
+   "aceitecoco.fun",
+   "hfysp.aceitecoco.fun"
+  ],
+  "page_titles": [
+   "Invalid URL"
+  ],
+  "cert_org": [
+   "Akamai Technologies, Inc."
+  ],
+  "network_owner": [
+   "dataforest GmbH"
+  ],
+  "evidence": [
+   "rdp_exposed: port 3389"
+  ]
+ },
+ {
+  "id": 50,
+  "domain": "99maxprogres.cz",
+  "country": "CZ",
+  "hostnames": [
+   "mail.99maxprogres.cz",
+   "kb.99maxprogres.cz",
+   "posta.99maxprogres.cz",
+   "vlan.99maxprogres.cz",
+   "energservis.99maxprogres.cz",
+   "netphone.99maxprogres.cz"
+  ],
+  "page_titles": [
+   "Horde :: Log in"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "New range for Maxprogres internal virtual services"
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2021-40438",
+   "end_of_life: Apache httpd",
+   "legacy_tls: port 443"
+  ]
+ },
+ {
+  "id": 55,
+  "domain": "sge.cat",
+  "country": "ES",
+  "hostnames": [
+   "vilanovaapp.sge.cat"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "AVATEL TELECOM, SA"
+  ],
+  "evidence": [
+   "end_of_life: nginx",
+   "legacy_tls: port 443"
+  ]
+ },
+ {
+  "id": 60,
+  "domain": "uvz.re",
+  "country": "FR",
+  "hostnames": [
+   "apk.uvz.re",
+   "www.apk.uvz.re"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "OVH SAS"
+  ],
+  "evidence": [
+   "end_of_life: nginx",
+   "expired_cert: port 443"
+  ]
+ },
+ {
+  "id": 65,
+  "domain": "stratimar.net",
+  "country": "US",
+  "hostnames": [
+   "cpcalendars.stratimar.net",
+   "cpcontacts.stratimar.net",
+   "mail.stratimar.net",
+   "www.stratimar.net",
+   "webmail.stratimar.net",
+   "stratimar.net"
+  ],
+  "page_titles": [
+   "Index of /"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "InMotion Hosting, Inc."
+  ],
+  "evidence": [
+   "open_directory: port 443",
+   "expired_cert: port 443",
+   "self_signed_cert: port 443"
+  ]
+ },
+ {
+  "id": 70,
+  "domain": "areasmar.de.com",
+  "country": "BG",
+  "hostnames": [
+   "225se1672.areasmar.de.com",
+   "56se1672.areasmar.de.com",
+   "157se1597.areasmar.de.com"
+  ],
+  "page_titles": [
+   "Apache HTTP Server Test Page powered by CentOS"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "Green Floid LLC",
+   "Sia Nano IT",
+   "* As ISP we provide hosting, virtual and dedicated servers."
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2021-40438"
+  ]
+ },
+ {
+  "id": 75,
+  "domain": "ateamo.com",
+  "country": "US",
+  "hostnames": [
+   "api.ateamo.com"
+  ],
+  "page_titles": [
+   "Ateamo API"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "DigitalOcean, LLC"
+  ],
+  "evidence": [
+   "end_of_life: nginx",
+   "legacy_tls: port 443"
+  ]
+ },
+ {
+  "id": 80,
+  "domain": "monexia.io",
+  "country": "DE",
+  "hostnames": [
+   "www.monexia.io",
+   "monexia.io"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "A100 ROW GmbH"
+  ],
+  "evidence": [
+   "end_of_life: nginx",
+   "expired_cert: port 443"
+  ]
+ },
+ {
+  "id": 85,
+  "domain": "handpoint.ninja",
+  "country": "US",
+  "hostnames": [
+   "handpoint.ninja"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "Amazon.com, Inc."
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2024-23897"
+  ]
+ },
+ {
+  "id": 90,
+  "domain": "serverpoint.com",
+  "country": "US",
+  "hostnames": [
+   "dallas-tx-datacenter.serverpoint.com",
+   "lasvegas-nv-datacenter.serverpoint.com",
+   "emailserver3-46.serverpoint.com",
+   "emailserver4-181.serverpoint.com",
+   "emailserver4.serverpoint.com",
+   "singapore-datacenter.serverpoint.com"
+  ],
+  "page_titles": [
+   "\r\n\tLogin to SmarterStats - SmarterStats\r\n",
+   "Login to Webmin",
+   "IIS Windows Server",
+   "Not Found"
+  ],
+  "cert_org": [
+   "Microsoft Corporation"
+  ],
+  "network_owner": [
+   "ServerPoint.com"
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2024-4577",
+   "rdp_exposed: port 3389",
+   "end_of_life: nginx"
+  ]
+ },
+ {
+  "id": 95,
+  "domain": "xitens.net",
+  "country": "NL",
+  "hostnames": [
+   "hosted-by.xitens.net",
+   "x1.xitens.net",
+   "vps-hosted-by.xitens.net",
+   "10215.vps.xitens.net"
+  ],
+  "page_titles": [
+   "Welcome to nginx!",
+   "Apache HTTP Server Test Page powered by CentOS",
+   "Index of /"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "We Dare B.V."
+  ],
+  "evidence": [
+   "smb_exposed: port 445",
+   "end_of_life: smb",
+   "open_directory: port 80"
+  ]
+ },
+ {
+  "id": 100,
+  "domain": "gradeark.com",
+  "country": "US",
+  "hostnames": [
+   "mx0.gradeark.com"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "HostPapa"
+  ],
+  "evidence": [
+   "open_data: ftp",
+   "expired_cert: port 25"
+  ]
+ },
+ {
+  "id": 105,
+  "domain": "it-360.one",
+  "country": "US",
+  "hostnames": [
+   "srv.it-360.one",
+   "server.it-360.one",
+   "spanel.it-360.one"
+  ],
+  "page_titles": [
+   "Welcome to nginx!",
+   "Sign In"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "Kamatera, Inc.",
+   "ReliableSite.Net LLC"
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2021-40438",
+   "rdp_exposed: port 3389",
+   "end_of_life: nginx"
+  ]
+ },
+ {
+  "id": 110,
+  "domain": "switch.ch",
+  "country": "CH",
+  "hostnames": [
+   "fl-5-164.zhdk.cloud.switch.ch",
+   "fl-1-186.zhdk.cloud.switch.ch",
+   "fl-1-37.zhdk.cloud.switch.ch",
+   "fl-4-105.zhdk.cloud.switch.ch",
+   "guybrush.switch.ch",
+   "public.ingress.k8s.staging.scloud.switch.ch"
+  ],
+  "page_titles": [
+   "Apache2 Debian Default Page: It works",
+   "Forbidden",
+   "Grafana",
+   "ThingsBoard"
+  ],
+  "cert_org": [
+   "None",
+   "Schweizerische Mobiliar Versicherungsgesellschaft AG"
+  ],
+  "network_owner": [
+   "Zurich, Switzerland",
+   "LAKE Solutions AG",
+   "SWITCH"
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2021-40438",
+   "telnet_exposed: port 17000",
+   "end_of_life: nginx"
+  ]
+ },
+ {
+  "id": 115,
+  "domain": "skypatrol.com",
+  "country": "US",
+  "hostnames": [
+   "www.myorders2.skypatrol.com",
+   "myorders2.skypatrol.com"
+  ],
+  "page_titles": [
+   "Sales Site"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "Comcast Cable Communications, LLC"
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2021-40438",
+   "end_of_life: Apache httpd",
+   "expired_cert: port 443"
+  ]
+ },
+ {
+  "id": 120,
+  "domain": "pilsfree.net",
+  "country": "CZ",
+  "hostnames": [
+   "infometeo.pilsfree.net",
+   "gitea.pilsfree.net",
+   "johnycz.pilsfree.net",
+   "kralovicka1416.pilsfree.net",
+   "aigon.pilsfree.net",
+   "radynska35-kamery.pilsfree.net"
+  ],
+  "page_titles": [
+   "ModeSMixer2",
+   "HTTP 401: Access denied",
+   "Welcome to nginx!",
+   "Not Found"
+  ],
+  "cert_org": [
+   "Synology Inc.",
+   "Internet Widgits Pty Ltd",
+   "Ubiquiti Inc."
+  ],
+  "network_owner": [
+   "FreeTel, s.r.o.",
+   "PilsFree, z.s."
+  ],
+  "evidence": [
+   "smb_exposed: port 445",
+   "kev_ransomware: CVE-2021-40438",
+   "end_of_life: nginx"
+  ]
+ },
+ {
+  "id": 125,
+  "domain": "grnet.gr",
+  "country": "GR",
+  "hostnames": [
+   "ns3-elixir.grnet.gr",
+   "snf-880236.vm.okeanos.grnet.gr",
+   "meet.digigov.grnet.gr",
+   "eie-beacon.grnet.gr",
+   "snf-877975.vm.okeanos.grnet.gr",
+   "snf-791222.vm.okeanos.grnet.gr"
+  ],
+  "page_titles": [
+   "beacons",
+   "Future Cities Challenge at Netmob",
+   "Redirect",
+   "Apache2 Debian Default Page: It works"
+  ],
+  "cert_org": [
+   "Acme Co",
+   "National Infrastructures for Research and Technology"
+  ],
+  "network_owner": [
+   "National Infrastructures for Research and Technology S.A."
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2021-40438",
+   "rdp_exposed: port 3389",
+   "open_directory: port 80"
+  ]
+ },
+ {
+  "id": 130,
+  "domain": "tipperaryny.org",
+  "country": "CA",
+  "hostnames": [
+   "tipperaryny.org"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "Elosoft Web Hosting Ltd."
+  ],
+  "evidence": [
+   "open_data: ftp"
+  ]
+ },
+ {
+  "id": 135,
+  "domain": "comtekmss.com",
+  "country": "US",
+  "hostnames": [
+   "mail.comtekmss.com"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "HostGator.com LLC"
+  ],
+  "evidence": [
+   "open_data: ftp"
+  ]
+ },
+ {
+  "id": 140,
+  "domain": "diplomatt.com",
+  "country": "JP",
+  "hostnames": [
+   "diplomatt.com"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "Server Hosting Service (NTTPCCommunications,Inc.)"
+  ],
+  "evidence": [
+   "open_data: ftp"
+  ]
+ },
+ {
+  "id": 145,
+  "domain": "ip-51-75-128.eu",
+  "country": "FR",
+  "hostnames": [
+   "ns3131695.ip-51-75-128.eu",
+   "ns3131633.ip-51-75-128.eu",
+   "ns3132181.ip-51-75-128.eu"
+  ],
+  "page_titles": [
+   "Default Site",
+   "Astralora — Western + Chinese Astrology App"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "OVH SAS"
+  ],
+  "evidence": [
+   "open_data: ftp"
+  ]
+ },
+ {
+  "id": 150,
+  "domain": "e-kei.pl",
+  "country": "PL",
+  "hostnames": [
+   "sklepsklejkaeko.e-kei.pl",
+   "serwerrozaria.e-kei.pl",
+   "cedrobsa.e-kei.pl",
+   "sklejkaeko.e-kei.pl",
+   "e-kei.pl",
+   "host121.e-kei.pl"
+  ],
+  "page_titles": [
+   " REKRUTACJA NA ZAJĘCIA STAŁE W ROKU SZKOLNYM 2022/2023",
+   "Sklejka-Eko &#8211; Producent Sklejki"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "Hosting Servers",
+   "Cyber_Folks S.A."
+  ],
+  "evidence": [
+   "open_data: ftp"
+  ]
+ }
+]

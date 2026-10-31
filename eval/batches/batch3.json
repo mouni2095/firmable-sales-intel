@@ -1,0 +1,683 @@
+[
+ {
+  "id": 4,
+  "domain": "asesor-contable.com",
+  "country": "ES",
+  "hostnames": [
+   "asesor-contable.com"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "ServiHosting NetWorks S.L."
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2021-40438"
+  ]
+ },
+ {
+  "id": 9,
+  "domain": "ecuanex.net.ec",
+  "country": "EC",
+  "hostnames": [
+   "ecuanex.net.ec",
+   "dns.ecuanex.net.ec"
+  ],
+  "page_titles": [
+   "Quito-Ecuador Web Nodo Ecuanex COMUNICACION ELECTRONICA PARA EL DESARROLLO\nSOCIAL"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "GPF CORPORACION - POWERFAST"
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2021-40438"
+  ]
+ },
+ {
+  "id": 14,
+  "domain": "araplca.org",
+  "country": "FR",
+  "hostnames": [
+   "aws.araplca.org"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "OVH SAS"
+  ],
+  "evidence": [
+   "rdp_exposed: port 3389"
+  ]
+ },
+ {
+  "id": 19,
+  "domain": "geant.org",
+  "country": "NL",
+  "hostnames": [
+   "misp-eval.geant.org",
+   "prod-haproxy.geant.org",
+   "tnc22.geant.org",
+   "test-haproxy.geant.org",
+   "vm-000086.vm.geant.org",
+   "test-nomad-ingress02.geant.org"
+  ],
+  "page_titles": [
+   "Service Unavailable",
+   "Users - GÉANT Test MISP",
+   "Welcome to nginx!",
+   "Apache2 Ubuntu Default Page: It works"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "IP allocation for GEANT network infrastructure",
+   "GEANT Vereniging"
+  ],
+  "evidence": [
+   "end_of_life: nginx",
+   "kev: CVE-2024-38475"
+  ]
+ },
+ {
+  "id": 24,
+  "domain": "utah.edu",
+  "country": "US",
+  "hostnames": [
+   "notchpeak20.chpc.utah.edu",
+   "notchpeak29.chpc.utah.edu",
+   "ndp-prod-193.chpc.utah.edu",
+   "sentry.chpc.utah.edu",
+   "linuxclass.chpc.utah.edu",
+   "frisco5.chpc.utah.edu"
+  ],
+  "page_titles": [
+   "Landscape Lab Dashboard",
+   "Home | EGI",
+   "Dell OpenManage ",
+   "The page you're looking for could not be found (404)"
+  ],
+  "cert_org": [
+   "Dell Inc",
+   "University of Utah"
+  ],
+  "network_owner": [
+   "Salesforce, Inc.",
+   "Google LLC",
+   "University of Utah"
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2021-40438",
+   "legacy_tls: port 443"
+  ]
+ },
+ {
+  "id": 29,
+  "domain": "hex.team",
+  "country": "RU",
+  "hostnames": [
+   "cc.hex.team"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "JSC \"RU-CENTER\""
+  ],
+  "evidence": [
+   "end_of_life: nginx",
+   "expired_cert: port 443"
+  ]
+ },
+ {
+  "id": 34,
+  "domain": "brainbuffet.com",
+  "country": "US",
+  "hostnames": [
+   "www.aca.brainbuffet.com",
+   "aca.brainbuffet.com"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "DigitalOcean, LLC"
+  ],
+  "evidence": [
+   "end_of_life: nginx",
+   "expired_cert: port 443",
+   "legacy_tls: port 443"
+  ]
+ },
+ {
+  "id": 39,
+  "domain": "CMU.EDU",
+  "country": "US",
+  "hostnames": [
+   "DOSA-GH-PRTR-EXCHANGE1.ANDREW.CMU.EDU",
+   "EXPERTFINDER-01.LIBRARY.CMU.EDU",
+   "WATCHMAN.HSS.CMU.EDU",
+   "KHAYYAM.ANDREW.CMU.EDU",
+   "NO-PIXELS-HERE.CLUB.CC.CMU.EDU",
+   "EZLEVIATHAN5.STAT.CMU.EDU"
+  ],
+  "page_titles": [
+   "Home - CMU Internet Behavior Experiment ",
+   "Star Intelligent"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "Carnegie Mellon University"
+  ],
+  "evidence": [
+   "kev: CVE-2024-38475",
+   "end_of_life: nginx"
+  ]
+ },
+ {
+  "id": 44,
+  "domain": "skydecor.in",
+  "country": "SG",
+  "hostnames": [
+   "www.skydecor.in",
+   "leads.skydecor.in",
+   "info.skydecor.in",
+   "event.skydecor.in",
+   "data.skydecor.in",
+   "mail.skydecor.in"
+  ],
+  "page_titles": [
+   "Skydecor Admin Dashboard",
+   "Best Laminate Brands in India, Decorative Laminate Manufacturers | Skydecor",
+   "One moment, please...",
+   "Skydecor"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "Virtual Private Hosting Service",
+   "MEGA VELOCITY PVT LTD",
+   "Amazon Data Services India"
+  ],
+  "evidence": [
+   "end_of_life: nginx",
+   "legacy_tls: port 443",
+   "expired_cert: port 443"
+  ]
+ },
+ {
+  "id": 49,
+  "domain": "proeditio.com",
+  "country": "ES",
+  "hostnames": [
+   "revistas.proeditio.com"
+  ],
+  "page_titles": [
+   "\n\t\tPROEDITIO\n\t\t\t\t\t"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "arsys.es"
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2021-40438",
+   "end_of_life: Apache httpd"
+  ]
+ },
+ {
+  "id": 54,
+  "domain": "buckmountainsports.com",
+  "country": "US",
+  "hostnames": [
+   "buckmountainsports.com"
+  ],
+  "page_titles": [
+   "Default Site"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "Amazon Technologies Inc."
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2021-40438",
+   "expired_cert: port 443",
+   "legacy_tls: port 443"
+  ]
+ },
+ {
+  "id": 59,
+  "domain": "sfer.io",
+  "country": "PL",
+  "hostnames": [
+   "apiusb.sfer.io",
+   "ukrsib.sfer.io",
+   "myusb.sfer.io"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "Hector S.A."
+  ],
+  "evidence": [
+   "end_of_life: nginx",
+   "expired_cert: port 443",
+   "legacy_tls: port 443"
+  ]
+ },
+ {
+  "id": 64,
+  "domain": "mediatrack.org",
+  "country": "US",
+  "hostnames": [
+   "broadcast.mediatrack.org"
+  ],
+  "page_titles": [
+   " MT-BROADCAST / SIGN-IN "
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "Google LLC"
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2021-40438",
+   "legacy_tls: port 443"
+  ]
+ },
+ {
+  "id": 69,
+  "domain": "foothill.edu",
+  "country": "US",
+  "hostnames": [
+   "tutor.foothill.edu",
+   "www.tutor.foothill.edu",
+   "mydesktopsunnyvale.foothill.edu",
+   "stemtutors.foothill.edu"
+  ],
+  "page_titles": [
+   "BIG-IP logout page"
+  ],
+  "cert_org": [
+   "California Community Colleges Chancellor’s Office"
+  ],
+  "network_owner": [
+   "Foothill-DeAnza Community College District"
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2021-40438",
+   "legacy_tls: port 443"
+  ]
+ },
+ {
+  "id": 74,
+  "domain": "transsexual-pix.com",
+  "country": "US",
+  "hostnames": [
+   "transsexual-pix.com"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "Mojohost"
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2021-40438"
+  ]
+ },
+ {
+  "id": 79,
+  "domain": "wispot.com",
+  "country": "FR",
+  "hostnames": [
+   "server0.wispot.com"
+  ],
+  "page_titles": [
+   "Login Page - WiSpot"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "OVH SAS"
+  ],
+  "evidence": [
+   "end_of_life: Apache httpd",
+   "kev_ransomware: CVE-2021-40438"
+  ]
+ },
+ {
+  "id": 84,
+  "domain": "cyberia.net.lb",
+  "country": "LB",
+  "hostnames": [
+   "broad1733.cyberia.net.lb",
+   "broad1567.cyberia.net.lb",
+   "broad1650.cyberia.net.lb",
+   "broad1487.cyberia.net.lb",
+   "broad1655.cyberia.net.lb",
+   "broad1388.cyberia.net.lb"
+  ],
+  "page_titles": [
+   "RouterOS",
+   "IIS7",
+   "IIS Windows Server",
+   "Apache2 Ubuntu Default Page: It works"
+  ],
+  "cert_org": [
+   "Dis",
+   "Huawei Technologies Co., Ltd"
+  ],
+  "network_owner": [
+   "Cyberia Subnet used for Broadband Services",
+   "WirelessBits"
+  ],
+  "evidence": [
+   "kev: CVE-2015-1635,MS15-034",
+   "end_of_life: nginx",
+   "legacy_tls: port 443"
+  ]
+ },
+ {
+  "id": 89,
+  "domain": "kingcounty.gov",
+  "country": "US",
+  "hostnames": [
+   "www.aqua.kingcounty.gov",
+   "aqua.kingcounty.gov",
+   "directory.kingcounty.gov",
+   "www.directory.kingcounty.gov",
+   "ftpgreen.kingcounty.gov",
+   "rims.kingcounty.gov"
+  ],
+  "page_titles": [
+   "Not Found"
+  ],
+  "cert_org": [
+   "King County",
+   "noclead..kxe76x"
+  ],
+  "network_owner": [
+   "King County Gov"
+  ],
+  "evidence": [
+   "open_data: ftp",
+   "legacy_tls: port 443"
+  ]
+ },
+ {
+  "id": 94,
+  "domain": "nipne.ro",
+  "country": "RO",
+  "hostnames": [
+   "rrp.nipne.ro",
+   "openscience.nipne.ro",
+   "rjp.nipne.ro",
+   "www.openscience.nipne.ro",
+   "dbpub.nipne.ro",
+   "www4.nipne.ro"
+  ],
+  "page_titles": [
+   "IFIN-HH Homepage Horia Hulubei National Institute for R&D; in Physics and Nuclear Engineering (IFIN-HH)",
+   "IFIN-HH Publications",
+   "Applied Nuclear Physics Department – IFIN‑HH (NIPNE)",
+   "Curierul de Fizica | Acasa"
+  ],
+  "cert_org": [
+   "Institutul de Fizică și Inginerie Nucleară Horia Hulubei",
+   "Institutul de Fizica si Inginerie Nucleara Horia Hulubei",
+   "Katello"
+  ],
+  "network_owner": [
+   "National Institute for Physics and Nuclear Engineering Horia Hulubei"
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2021-40438",
+   "end_of_life: Apache httpd",
+   "expired_cert: port 443"
+  ]
+ },
+ {
+  "id": 99,
+  "domain": "ibc.pl",
+  "country": "PL",
+  "hostnames": [
+   "3.ibc.pl",
+   "ibc.pl"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "IBC.PL POLSKA hosting services"
+  ],
+  "evidence": [
+   "open_data: ftp"
+  ]
+ },
+ {
+  "id": 104,
+  "domain": "tube-server.com",
+  "country": "DE",
+  "hostnames": [
+   "tube-server.com"
+  ],
+  "page_titles": [
+   "AstariaMC | In Arbeit...",
+   "Service Unavailable",
+   "Apache2 Debian Default Page: It works",
+   "Coming Soon - domain-1.local"
+  ],
+  "cert_org": [
+   "CloudFlare, Inc."
+  ],
+  "network_owner": [
+   "Ferdinand Zink trading as Tube-Hosting",
+   "Tim Niemeyer",
+   "Tube-Hosting"
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2024-4577",
+   "rdp_exposed: port 3389",
+   "open_directory: port 80"
+  ]
+ },
+ {
+  "id": 109,
+  "domain": "privatelayer.com",
+  "country": "CH",
+  "hostnames": [
+   "d18-ss.privatelayer.com",
+   "netdisco.privatelayer.com",
+   "internal.privatelayer.com",
+   "hostedby.privatelayer.com",
+   "mx.privatelayer.com",
+   "panel.privatelayer.com"
+  ],
+  "page_titles": [
+   "Login",
+   "Ninja Ads",
+   "Web Server's Default Page",
+   " 404 Not Found\r\n"
+  ],
+  "cert_org": [
+   "Plesk",
+   "XX",
+   "Dis"
+  ],
+  "network_owner": [
+   "PRIVATE LAYER INC",
+   "Private Layer INC",
+   "CLIENTID4519"
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2024-4577",
+   "rdp_exposed: port 3389",
+   "end_of_life: nginx"
+  ]
+ },
+ {
+  "id": 114,
+  "domain": "yoihaisya.com",
+  "country": "BR",
+  "hostnames": [
+   "yoihaisya.com"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "Hostzone Tecnologia LTDA"
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2020-0796",
+   "smb_exposed: port 445"
+  ]
+ },
+ {
+  "id": 119,
+  "domain": "welthaus24.de",
+  "country": "DE",
+  "hostnames": [
+   "server1.welthaus24.de"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "Hetzner Online GmbH"
+  ],
+  "evidence": [
+   "open_data: ftp"
+  ]
+ },
+ {
+  "id": 124,
+  "domain": "strike.bz",
+  "country": "US",
+  "hostnames": [
+   "fNYl6V9K.strike.bz",
+   "jRTOqWYK.strike.bz",
+   "HYySWsCd.strike.bz",
+   "Smz9KlKS.strike.bz",
+   "SjFKZ7eN.strike.bz",
+   "VhvRtWce.strike.bz"
+  ],
+  "page_titles": [
+   "\r\n\tScreenConnect Remote Support Software\r\n"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "3K33 sp. z o.o."
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2020-0796",
+   "smb_exposed: port 445",
+   "end_of_life: nginx"
+  ]
+ },
+ {
+  "id": 129,
+  "domain": "netnam.vn",
+  "country": "VN",
+  "hostnames": [
+   "SendingGW220-108.111.netnam.vn",
+   "ci238-41.netnam.vn",
+   "ci227-122.netnam.vn",
+   "ci229-17.netnam.vn",
+   "ci96.124-210.netnam.vn",
+   "ci96.118-28.netnam.vn"
+  ],
+  "page_titles": [
+   "FortiGate",
+   "Odoo",
+   "Trang tin điện tử Bộ môn Cầu Hầm",
+   "Nginx Proxy Manager"
+  ],
+  "cert_org": [
+   "NetNam",
+   "Fortinet Ltd."
+  ],
+  "network_owner": [
+   "NetNam Corporation",
+   "Netnam Corporation",
+   "ip range assigned for server in HCMC"
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2021-40438",
+   "rdp_exposed: port 3389",
+   "end_of_life: nginx"
+  ]
+ },
+ {
+  "id": 134,
+  "domain": "tooold.ru",
+  "country": "NL",
+  "hostnames": [
+   "hydrofinamica.tooold.ru"
+  ],
+  "page_titles": [
+   "Hydrofinamica"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "Individual Entrepreneur Anton Levin"
+  ],
+  "evidence": [
+   "compromise: Redis key-value store",
+   "end_of_life: nginx"
+  ]
+ },
+ {
+  "id": 139,
+  "domain": "nox.com.uy",
+  "country": "UY",
+  "hostnames": [
+   "mail.nox.com.uy"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "Administracion Nacional de Telecomunicaciones"
+  ],
+  "evidence": [
+   "kev: CVE-2019-0708",
+   "rdp_exposed: port 3389"
+  ]
+ },
+ {
+  "id": 144,
+  "domain": "e-kbs.co.jp",
+  "country": "JP",
+  "hostnames": [
+   "e-kbs.co.jp"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "Server Hosting Service (NTTPCCommunications,Inc.)"
+  ],
+  "evidence": [
+   "open_data: ftp"
+  ]
+ },
+ {
+  "id": 149,
+  "domain": "chula.ac.th",
+  "country": "TH",
+  "hostnames": [
+   "chula.ac.th",
+   "www.thaistudies.chula.ac.th",
+   "radical4.sc.chula.ac.th",
+   "mis.sc.chula.ac.th",
+   "hubble.sc.chula.ac.th",
+   "cms-beta.cp.eng.chula.ac.th"
+  ],
+  "page_titles": [
+   "Apache2 Debian Default Page: It works",
+   "\n\t\tEngineering Journal\n\t\t\t\t\t",
+   "Error",
+   "สำนักงานวิทยทรัพยากร หอสมุดกลาง จุฬาลงกรณ์มหาวิทยาลัย"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "Incapsula Inc",
+   "DigitalOcean, LLC",
+   "Chulalongkorn University"
+  ],
+  "evidence": [
+   "kev: CVE-2017-7269",
+   "rdp_exposed: port 3389",
+   "end_of_life: Apache httpd"
+  ]
+ }
+]

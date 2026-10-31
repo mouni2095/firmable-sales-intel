@@ -1,0 +1,646 @@
+[
+ {
+  "id": 2,
+  "domain": "carefl.org",
+  "country": "US",
+  "hostnames": [
+   "mail.carefl.org"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "Comcast Cable Communications, LLC"
+  ],
+  "evidence": [
+   "rdp_exposed: port 3389"
+  ]
+ },
+ {
+  "id": 7,
+  "domain": "ownvps.de",
+  "country": "DE",
+  "hostnames": [
+   "k116.ownvps.de"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "Glowfish"
+  ],
+  "evidence": [
+   "end_of_life: Apache httpd",
+   "kev_ransomware: CVE-2021-40438"
+  ]
+ },
+ {
+  "id": 12,
+  "domain": "bnv-bamberg.de",
+  "country": "DE",
+  "hostnames": [
+   "merowech.bnv-bamberg.de"
+  ],
+  "page_titles": [
+   "Index of /"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "Optitrust GmbH"
+  ],
+  "evidence": [
+   "open_directory: port 80",
+   "kev_ransomware: CVE-2021-40438"
+  ]
+ },
+ {
+  "id": 17,
+  "domain": "peonsi.com",
+  "country": "DE",
+  "hostnames": [
+   "paucek.peonsi.com"
+  ],
+  "page_titles": [
+   "Home | 81.7.13.16"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "EUserv Internet"
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2021-40438",
+   "end_of_life: Apache httpd"
+  ]
+ },
+ {
+  "id": 22,
+  "domain": "unl.pt",
+  "country": "PT",
+  "hostnames": [
+   "idp.ensp.unl.pt",
+   "verifier.novaims.unl.pt",
+   "imap.itqb.unl.pt",
+   "imap1.itqb.unl.pt",
+   "imap4.itqb.unl.pt",
+   "smtp.itqb.unl.pt"
+  ],
+  "page_titles": [
+   "Default Site",
+   "Document Moved",
+   "NOVA IMS Digital",
+   "Home"
+  ],
+  "cert_org": [
+   "Universidade Nova de Lisboa"
+  ],
+  "network_owner": [
+   "Fundacao para a Ciencia e a Tecnologia, I.P.",
+   "Universidade Nova de Lisboa"
+  ],
+  "evidence": [
+   "end_of_life: nginx",
+   "kev_ransomware: CVE-2021-40438"
+  ]
+ },
+ {
+  "id": 27,
+  "domain": "naturheilpraxis-antje.de",
+  "country": "US",
+  "hostnames": [
+   "naturheilpraxis-antje.de"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "DigitalOcean, LLC"
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2021-40438",
+   "end_of_life: Apache httpd"
+  ]
+ },
+ {
+  "id": 32,
+  "domain": "205homeshere.com",
+  "country": "US",
+  "hostnames": [
+   "205homeshere.com",
+   "www.205homeshere.com"
+  ],
+  "page_titles": [
+   "STOP DR Horton!"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "Amazon Technologies Inc."
+  ],
+  "evidence": [
+   "end_of_life: nginx",
+   "expired_cert: port 443"
+  ]
+ },
+ {
+  "id": 37,
+  "domain": "cloudcontrol.es",
+  "country": "ES",
+  "hostnames": [
+   "falcaniz.cloudcontrol.es",
+   "initecno01.cloudcontrol.es",
+   "muchocamping.cloudcontrol.es",
+   "acsa.cloudcontrol.es",
+   "quicial.cloudcontrol.es"
+  ],
+  "page_titles": [
+   "IIS Windows Server"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "ACENS-TELEFONICA"
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2021-40438"
+  ]
+ },
+ {
+  "id": 42,
+  "domain": "nike.com",
+  "country": "US",
+  "hostnames": [
+   "nike.com",
+   "news.nike.com",
+   "jobs.nike.com",
+   "help.nike.com",
+   "secure-store.nike.com",
+   "elite.nike.com"
+  ],
+  "page_titles": [
+   "Flow_v1.0",
+   "Invalid URL",
+   "ERROR: The request could not be satisfied",
+   "Log in - Factory Order Entry"
+  ],
+  "cert_org": [
+   "Nike, Inc."
+  ],
+  "network_owner": [
+   "NETSHIELD LTD",
+   "Akamai Technologies, Inc.",
+   "Amazon Technologies Inc."
+  ],
+  "evidence": [
+   "end_of_life: nginx",
+   "expired_cert: port 443",
+   "legacy_tls: port 443"
+  ]
+ },
+ {
+  "id": 47,
+  "domain": "loopiavps.com",
+  "country": "SK",
+  "hostnames": [
+   "loopia-vps-34ad09c0-cb54-4f7e-8074-5a5a7bb5001d-2148.loopiavps.com",
+   "loopia-vps-9af80975-a9e4-43e9-8159-af755b2fd29a-2515.loopiavps.com",
+   "loopia-vps-96687c1b-19e2-48eb-9904-f5d73dcf39ed-2566.loopiavps.com",
+   "loopia-vps-41f4a680-f7a6-4445-b57b-227580edec6b-2328.loopiavps.com",
+   "loopia-vps-345bdf04-5343-4e64-abf1-f30c9ab19cb3-2028.loopiavps.com",
+   "vps152021.loopiavps.com"
+  ],
+  "page_titles": [
+   "Apache2 Ubuntu Default Page: It works",
+   "Alentec & Orion AB Media Gallery",
+   "Analys &amp; optimering av tryckluftsanläggningar | Enlighter",
+   "Business support"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "Loopia AB"
+  ],
+  "evidence": [
+   "end_of_life: nginx",
+   "kev_ransomware: CVE-2021-40438"
+  ]
+ },
+ {
+  "id": 52,
+  "domain": "dsvrates.cz",
+  "country": "CZ",
+  "hostnames": [
+   "dsvrates.cz"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "INTERNET CZ, a.s."
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2021-40438"
+  ]
+ },
+ {
+  "id": 57,
+  "domain": "ccmcptar.com",
+  "country": "NL",
+  "hostnames": [
+   "server3.ccmcptar.com"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "Private Customer"
+  ],
+  "evidence": [
+   "open_data: ftp"
+  ]
+ },
+ {
+  "id": 62,
+  "domain": "foodcoop.com",
+  "country": "US",
+  "hostnames": [
+   "www-dev.foodcoop.com",
+   "foodcoop.com"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "Natural Wireless, LLC"
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2021-40438"
+  ]
+ },
+ {
+  "id": 67,
+  "domain": "bconbox.com",
+  "country": "IE",
+  "hostnames": [
+   "bconbox.com",
+   "www.bconbox.com"
+  ],
+  "page_titles": [
+   "BconBox &#8211; Document management system"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "Amazon Data Services Ireland Limited"
+  ],
+  "evidence": [
+   "end_of_life: nginx",
+   "legacy_tls: port 443"
+  ]
+ },
+ {
+  "id": 72,
+  "domain": "thcgraphics.com",
+  "country": "US",
+  "hostnames": [
+   "mail.thcgraphics.com"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "HostGator.com LLC"
+  ],
+  "evidence": [
+   "open_data: ftp"
+  ]
+ },
+ {
+  "id": 77,
+  "domain": "kcbba.com",
+  "country": "US",
+  "hostnames": [
+   "kcbba.com"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "Cogent Communications, LLC"
+  ],
+  "evidence": [
+   "rdp_exposed: port 3389"
+  ]
+ },
+ {
+  "id": 82,
+  "domain": "fastspeed.dk",
+  "country": "DK",
+  "hostnames": [
+   "0x5359fbef.static.cust.fastspeed.dk",
+   "0x573d643b.static.cust.fastspeed.dk",
+   "0x5359fb85.static.cust.fastspeed.dk",
+   "0x573d558d.static.cust.fastspeed.dk",
+   "0x573e6616.static.cust.fastspeed.dk",
+   "0x573e633d.static.cust.fastspeed.dk"
+  ],
+  "page_titles": [
+   "Vejret i Tisvilde",
+   "Hello! Welcome to Synology Web Station!",
+   "Home Assistant",
+   "Administrative Console"
+  ],
+  "cert_org": [
+   "mailcow"
+  ],
+  "network_owner": [
+   "TDC Holding A/S"
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2021-40438",
+   "open_directory: port 80",
+   "end_of_life: nginx"
+  ]
+ },
+ {
+  "id": 87,
+  "domain": "grupoboreal.ar",
+  "country": "AR",
+  "hostnames": [
+   "labnoa.grupoboreal.ar"
+  ],
+  "page_titles": [
+   "Login - SINERGIA Laboratorio de Análisis Clínicos"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "Telecom Argentina S.A."
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2019-11043,CVE-2021-40438",
+   "end_of_life: Apache httpd",
+   "expired_cert: port 443"
+  ]
+ },
+ {
+  "id": 92,
+  "domain": "dreyes.net",
+  "country": "US",
+  "hostnames": [
+   "dreyes.net"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "pair Networks"
+  ],
+  "evidence": [
+   "open_data: ftp"
+  ]
+ },
+ {
+  "id": 97,
+  "domain": "ungererandcompany.com",
+  "country": "US",
+  "hostnames": [
+   "mail.ungererandcompany.com",
+   "mail2.ungererandcompany.com",
+   "www.mail2.ungererandcompany.com",
+   "ungererandcompany.com"
+  ],
+  "page_titles": [
+   "Outlook"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "Static IP Services",
+   "pair Networks"
+  ],
+  "evidence": [
+   "exchange_onprem: Exchange",
+   "kev: CVE-2012-1823",
+   "end_of_life: Apache httpd"
+  ]
+ },
+ {
+  "id": 102,
+  "domain": "facson.cz",
+  "country": "CZ",
+  "hostnames": [
+   "mail.facson.cz"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "CETIN a.s.",
+   "AIRWAYNET, a.s."
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2020-0796",
+   "smb_exposed: port 445"
+  ]
+ },
+ {
+  "id": 107,
+  "domain": "intspace.de",
+  "country": "DE",
+  "hostnames": [
+   "rz02-r1-2.intspace.de"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "Int-Tech Systems Network"
+  ],
+  "evidence": [
+   "open_data: ftp"
+  ]
+ },
+ {
+  "id": 112,
+  "domain": "industriasmerk.com",
+  "country": "US",
+  "hostnames": [
+   "vps13.industriasmerk.com"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "SECURED SERVERS LLC"
+  ],
+  "evidence": [
+   "open_data: ftp"
+  ]
+ },
+ {
+  "id": 117,
+  "domain": "eso.org",
+  "country": "DE",
+  "hostnames": [
+   "thermo.hq.eso.org",
+   "dataportal.eso.org",
+   "dataportal2.hq.eso.org",
+   "dataportal-vip.hq.eso.org",
+   "imaphost.hq.eso.org",
+   "smtp.email.eso.org"
+  ],
+  "page_titles": [
+   "Test Page for the Apache HTTP Server on Scientific Linux",
+   "Test Page for the HTTP Server on Red Hat Enterprise Linux",
+   "ESO Remote Access Sign-in",
+   "ESO ETC 2.0"
+  ],
+  "cert_org": [
+   "ESO European Southern Observatory"
+  ],
+  "network_owner": [
+   "European Southern Observatory"
+  ],
+  "evidence": [
+   "open_data: ftp",
+   "kev_ransomware: CVE-2021-40438",
+   "legacy_tls: port 443"
+  ]
+ },
+ {
+  "id": 122,
+  "domain": "vescnet.com.br",
+  "country": "BR",
+  "hostnames": [
+   "spm.vescnet.com.br"
+  ],
+  "page_titles": [
+   "VESCNET PROVEDORES DO BRASIL"
+  ],
+  "cert_org": [
+   "SomeOrganization"
+  ],
+  "network_owner": [
+   "VESCNET PROVEDORES LTDA"
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2021-40438",
+   "end_of_life: Apache httpd",
+   "expired_cert: port 443"
+  ]
+ },
+ {
+  "id": 127,
+  "domain": "vt.edu",
+  "country": "US",
+  "hostnames": [
+   "mm-1.dev.mobility.nis.ipv6.vt.edu",
+   "mm.dev.mobility.nis.ipv6.vt.edu",
+   "JCH210HallwayRicohCopier.cnre.vt.edu",
+   "h80ad9b2d.dhcp.vt.edu",
+   "sterrett136055.vpas.vt.edu",
+   "hc65292e1.dhcp.vt.edu"
+  ],
+  "page_titles": [
+   "Intern Symposium",
+   "Test Page for the Nginx HTTP Server on Rocky Linux",
+   "Not Found",
+   "Apache2 Ubuntu Default Page: It works"
+  ],
+  "cert_org": [
+   "ZOOM",
+   "Unspecified",
+   "Virginia Polytechnic Institute and State University"
+  ],
+  "network_owner": [
+   "Internet2",
+   "Virginia Polytechnic Institute and State Univ.",
+   "Cogent Communications, LLC"
+  ],
+  "evidence": [
+   "ot_medical_exposed: lantronix-udp",
+   "end_of_life: Prometheus Node Exporter",
+   "kev: CVE-2024-38475"
+  ]
+ },
+ {
+  "id": 132,
+  "domain": "online-server.cloud",
+  "country": "DE",
+  "hostnames": [
+   "9d8fbd.online-server.cloud",
+   "5c7ebde.online-server.cloud",
+   "3907f3f.online-server.cloud",
+   "a03dd15.online-server.cloud",
+   "a906ec4.online-server.cloud",
+   "a03e297.online-server.cloud"
+  ],
+  "page_titles": [
+   "Web Server's Default Page",
+   "Plesk Onyx 17.8.11",
+   "Scheduled Maintenance",
+   "Online-Bewerbermanagement"
+  ],
+  "cert_org": [
+   "Plesk"
+  ],
+  "network_owner": [
+   "IONOS SE",
+   "Strato GmbH",
+   "1&1 IONOS SE"
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2021-40438",
+   "end_of_life: nginx",
+   "expired_cert: port 110"
+  ]
+ },
+ {
+  "id": 137,
+  "domain": "corzconnect.com",
+  "country": "NL",
+  "hostnames": [
+   "mailpanel.corzconnect.com"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "dogado GmbH"
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2020-0796",
+   "smb_exposed: port 445"
+  ]
+ },
+ {
+  "id": 142,
+  "domain": "maxnett.net",
+  "country": "GB",
+  "hostnames": [
+   "smtp.maxnett.net"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "Maxnett Ltd."
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2020-0796",
+   "smb_exposed: port 445"
+  ]
+ },
+ {
+  "id": 147,
+  "domain": "loading.net",
+  "country": "ES",
+  "hostnames": [
+   "cargoserpa.loading.net",
+   "lbcranes.loading.net",
+   "materiales.loading.net",
+   "maletastony.loading.net",
+   "naturgy-temp.loading.net",
+   "apofis.loading.net"
+  ],
+  "page_titles": [
+   "Web Server's Default Page",
+   "Plesk Obsidian 18.0.81",
+   "Default Parallels Plesk Page",
+   "Documento movido"
+  ],
+  "cert_org": [
+   "Plesk"
+  ],
+  "network_owner": [
+   "Grupo Loading Systems, S.L.",
+   "Loading",
+   "Loading web services"
+  ],
+  "evidence": [
+   "rdp_exposed: port 3389",
+   "end_of_life: MariaDB",
+   "expired_cert: port 993"
+  ]
+ }
+]

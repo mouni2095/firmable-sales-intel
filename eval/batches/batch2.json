@@ -1,0 +1,660 @@
+[
+ {
+  "id": 3,
+  "domain": "pucrs.br",
+  "country": "US",
+  "hostnames": [
+   "soulmvap.pucrs.br",
+   "pucrs.br",
+   "www.inf.pucrs.br",
+   "sites.nlp.pucrs.br",
+   "bid46gw.emailer.pucrs.br",
+   "hfactors.pucrs.br"
+  ],
+  "page_titles": [
+   "Faculdade de InformÃ¡tica",
+   "HFACTORS &#8211; Human Factors and Resilience Research"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "Cloudflare, Inc.",
+   "HubSpot, Inc.",
+   "Amazon.com, Inc."
+  ],
+  "evidence": [
+   "end_of_life: Apache httpd",
+   "kev_ransomware: CVE-2021-40438"
+  ]
+ },
+ {
+  "id": 8,
+  "domain": "hanshinkiki.co.jp",
+  "country": "JP",
+  "hostnames": [
+   "hanshinkiki.co.jp",
+   "www.hanshinkiki.co.jp"
+  ],
+  "page_titles": [
+   "阪神機器株式会社"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "Internet Initiative Japan Inc."
+  ],
+  "evidence": [
+   "kev: CVE-2024-38475",
+   "legacy_tls: port 443"
+  ]
+ },
+ {
+  "id": 13,
+  "domain": "eworks-asp.com",
+  "country": "JP",
+  "hostnames": [
+   "kawakin.eworks-asp.com"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "Server Hosting Service (NTTPCCommunications,Inc.)"
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2021-40438"
+  ]
+ },
+ {
+  "id": 18,
+  "domain": "rensep.org",
+  "country": "IE",
+  "hostnames": [
+   "rensep.org"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "Amazon Technologies Inc."
+  ],
+  "evidence": [
+   "end_of_life: https",
+   "legacy_tls: port 443"
+  ]
+ },
+ {
+  "id": 23,
+  "domain": "aisboerk.com",
+  "country": "DE",
+  "hostnames": [
+   "www.aisboerk.com"
+  ],
+  "page_titles": [
+   "aisboerk.com"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "Contabo GmbH"
+  ],
+  "evidence": [
+   "end_of_life: nginx",
+   "legacy_tls: port 443"
+  ]
+ },
+ {
+  "id": 28,
+  "domain": "tygem.com",
+  "country": "KR",
+  "hostnames": [
+   "tygem.com"
+  ],
+  "page_titles": [
+   "타이젬 - 대한민국 1위 바둑사이트 TYGEM.COM"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "Tencent Building, Kejizhongyi Avenue"
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2019-11043,CVE-2021-40438",
+   "end_of_life: Apache httpd",
+   "legacy_tls: port 443"
+  ]
+ },
+ {
+  "id": 33,
+  "domain": "dpb.sk",
+  "country": "SK",
+  "hostnames": [
+   "posta.dpb.sk"
+  ],
+  "page_titles": [
+   "Document Moved"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "DPB a.s."
+  ],
+  "evidence": [
+   "exchange_onprem: Exchange"
+  ]
+ },
+ {
+  "id": 38,
+  "domain": "kore.ai",
+  "country": "US",
+  "hostnames": [
+   "kore.ai"
+  ],
+  "page_titles": [
+   "Error",
+   "Kore.ai"
+  ],
+  "cert_org": [
+   "KORE.AI, Inc"
+  ],
+  "network_owner": [
+   "Amazon Technologies Inc.",
+   "Amazon Data Services Mexico",
+   "Microsoft Corporation"
+  ],
+  "evidence": [
+   "end_of_life: nginx",
+   "expired_cert: port 443",
+   "legacy_tls: port 443"
+  ]
+ },
+ {
+  "id": 43,
+  "domain": "ingressoseguro.net",
+  "country": "US",
+  "hostnames": [
+   "api-dev.ingressoseguro.net"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "Amazon Technologies Inc."
+  ],
+  "evidence": [
+   "end_of_life: nginx",
+   "legacy_tls: port 443"
+  ]
+ },
+ {
+  "id": 48,
+  "domain": "zsjr002511.com",
+  "country": "CN",
+  "hostnames": [
+   "zsjr002511.com"
+  ],
+  "page_titles": [
+   "服务云"
+  ],
+  "cert_org": [
+   "中顺洁柔纸业股份有限公司"
+  ],
+  "network_owner": [
+   "Tencent cloud computing (Beijing) Co., Ltd."
+  ],
+  "evidence": [
+   "end_of_life: nginx",
+   "legacy_tls: port 443"
+  ]
+ },
+ {
+  "id": 53,
+  "domain": "buzzboxbenefit.com",
+  "country": "US",
+  "hostnames": [
+   "shost254.kmta.sharedip.buzzboxbenefit.com",
+   "hosts.kmta.sharedip.buzzboxbenefit.com",
+   "shost226.kmta.sharedip.buzzboxbenefit.com",
+   "shost242.kmta.sharedip.buzzboxbenefit.com",
+   "shost233.kmta.sharedip.buzzboxbenefit.com"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "OVH US LLC"
+  ],
+  "evidence": [
+   "open_data: ftp",
+   "end_of_life: Control Web Panel",
+   "expired_cert: port 2083"
+  ]
+ },
+ {
+  "id": 58,
+  "domain": "ddbolt.net",
+  "country": "US",
+  "hostnames": [
+   "mail.ddbolt.net",
+   "www.ddbolt.net",
+   "ddbolt.net"
+  ],
+  "page_titles": [
+   "Digital Deadbolt"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "Fogo Data Centers"
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2021-40438",
+   "legacy_tls: port 443"
+  ]
+ },
+ {
+  "id": 63,
+  "domain": "arep.cat",
+  "country": "ES",
+  "hostnames": [
+   "mail.arep.cat",
+   "www.mail.arep.cat"
+  ],
+  "page_titles": [
+   "Outlook"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "Cogent Communications, LLC"
+  ],
+  "evidence": [
+   "exchange_onprem: Exchange",
+   "legacy_tls: port 443"
+  ]
+ },
+ {
+  "id": 68,
+  "domain": "rhostjh.com",
+  "country": "US",
+  "hostnames": [
+   "rsj21.rhostjh.com",
+   "rsj28.rhostjh.com",
+   "rsj13.rhostjh.com",
+   "rhostjh.com",
+   "ns2.rhostjh.com"
+  ],
+  "page_titles": [
+   "WHM Login",
+   "cPanel Login"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "Cloudflare, Inc.",
+   "Unified Layer"
+  ],
+  "evidence": [
+   "open_data: ftp",
+   "kev: CVE-2020-11023",
+   "end_of_life: nginx"
+  ]
+ },
+ {
+  "id": 73,
+  "domain": "hexis.dev",
+  "country": "US",
+  "hostnames": [
+   "kl.hexis.dev",
+   "test.kl.hexis.dev",
+   "site.kl.hexis.dev",
+   "m.kl.hexis.dev"
+  ],
+  "page_titles": [
+   "Administracija | Katarina Line"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "Amazon Technologies Inc."
+  ],
+  "evidence": [
+   "end_of_life: nginx",
+   "legacy_tls: port 443"
+  ]
+ },
+ {
+  "id": 78,
+  "domain": "rheincore.com",
+  "country": "DE",
+  "hostnames": [
+   "mail.rheincore.com"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "IONOS SE"
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2020-0796",
+   "smb_exposed: port 445"
+  ]
+ },
+ {
+  "id": 83,
+  "domain": "lifetimefacilitymgmt.com",
+  "country": "US",
+  "hostnames": [
+   "lifetimefacilitymgmt.com"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "HostGator.com LLC"
+  ],
+  "evidence": [
+   "open_data: ftp"
+  ]
+ },
+ {
+  "id": 88,
+  "domain": "tataidc.com",
+  "country": "IN",
+  "hostnames": [
+   "mail.tataidc.com"
+  ],
+  "page_titles": [
+   "ManageEngine ServiceDesk Plus",
+   "Redirect",
+   "Home | SIDDHARTHA",
+   "FortiGate"
+  ],
+  "cert_org": [
+   "FinThrive, Inc.",
+   "Fortinet Ltd.",
+   "NA"
+  ],
+  "network_owner": [
+   "Tata Teleservices Limited -GSM Division",
+   "TATA TELESERVICES LTD - TATA INDICOM - CDMA DIVISION",
+   "TATA TELESERVICES LTD -- CDMA"
+  ],
+  "evidence": [
+   "rdp_exposed: port 3389",
+   "telnet_exposed: port 23",
+   "kev: CVE-2020-11023"
+  ]
+ },
+ {
+  "id": 93,
+  "domain": "dtp.net.id",
+  "country": "ID",
+  "hostnames": [
+   "gsd.dtp.net.id",
+   "sonic.dtp.net.id",
+   "IP-90-163-35.dtp.net.id",
+   "IP-168-219.dtp.net.id",
+   "IP-78-205-234.dtp.net.id",
+   "IP-90-165-27.dtp.net.id"
+  ],
+  "page_titles": [
+   "Ups! Server is down.",
+   "RouterOS router configuration page",
+   "PT ZHC ALADIN INTERNATIONAL"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "PT Graha Sarana Data",
+   "PT. Tudung Putra Putri Jaya",
+   "PT Dwi Tunggal Putra"
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2021-40438",
+   "rdp_exposed: port 3389",
+   "end_of_life: Apache httpd"
+  ]
+ },
+ {
+  "id": 98,
+  "domain": "azteca-comunicaciones.com",
+  "country": "CO",
+  "hostnames": [
+   "poseidon.azteca-comunicaciones.com",
+   "azteca-comunicaciones.com"
+  ],
+  "page_titles": [
+   "4xx Client Error",
+   "Azteca Comunicaciones Colombia - Test de velocidad",
+   "LIDiag Reportes",
+   "Application Blocked"
+  ],
+  "cert_org": [
+   "Meta Platforms, Inc."
+  ],
+  "network_owner": [
+   "TV AZTECA SUCURSAL COLOMBIA"
+  ],
+  "evidence": [
+   "telnet_exposed: port 23",
+   "kev: CVE-2024-38475",
+   "end_of_life: nginx"
+  ]
+ },
+ {
+  "id": 103,
+  "domain": "ucsd.edu",
+  "country": "US",
+  "hostnames": [
+   "palabnas2.ucsd.edu",
+   "hedp-lab-pc.ucsd.edu",
+   "kobol-b.crbs.ucsd.edu",
+   "corebio.ucsd.edu",
+   "xn---888--27q7e0aaaaij0c8exa2am9ha5ftrqa2g2cs1k.identitynow.ucsd.edu",
+   "gcore-smrtlink.ucsd.edu"
+  ],
+  "page_titles": [
+   "เว็บพนันออนไลน์ 888 เว็บตรง สล็อตแตกง่าย ฝากถอนวอเลท ไม่มีขั้นต่ำ",
+   "pg slot auto แตกง่าย เว็บตรง 2024 ฝากถอนวอเลท ไม่มีขั้นต่ำ",
+   "sbfplay99 คาสิโนออนไลน์อันดับหนึ่งในไทย พร้อมเครดิตฟรี สล็อตสุดฮิต",
+   "HTTP Server Test Page powered by: Rocky Linux"
+  ],
+  "cert_org": [
+   "Unspecified",
+   "University of California, San Diego"
+  ],
+  "network_owner": [
+   "San Diego Supercomputer Center",
+   "Proofpoint, Inc.",
+   "University of California, San Diego"
+  ],
+  "evidence": [
+   "ot_medical_exposed: dicom",
+   "kev_ransomware: CVE-2021-40438",
+   "rdp_exposed: port 3389"
+  ]
+ },
+ {
+  "id": 108,
+  "domain": "dfci-fischerlab.com",
+  "country": "US",
+  "hostnames": [
+   "cicd.dfci-fischerlab.com"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "Amazon Data Services Northern Virginia"
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2024-23897",
+   "end_of_life: Jenkins",
+   "legacy_tls: port 443"
+  ]
+ },
+ {
+  "id": 113,
+  "domain": "ate.info",
+  "country": "FR",
+  "hostnames": [
+   "somenor.infra.ate.info",
+   "impnat-vtc-infra.dedie.ate.info",
+   "eff-qgis.dedie.ate.info",
+   "innovasys01.dedie.ate.info",
+   "efs.infra.ate.info",
+   "itroom-lamp181.dedie.ate.info"
+  ],
+  "page_titles": [
+   "Welcome to nginx!"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "Eurofiber France SAS",
+   "ATE Customers virtual servers",
+   "ATE Joho"
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2021-40438",
+   "rdp_exposed: port 3389",
+   "end_of_life: Apache httpd"
+  ]
+ },
+ {
+  "id": 118,
+  "domain": "apple-holidays.com.sg",
+  "country": "SG",
+  "hostnames": [
+   "mail.apple-holidays.com.sg"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "Vodien Internet Solutions Pte Ltd"
+  ],
+  "evidence": [
+   "open_data: ftp"
+  ]
+ },
+ {
+  "id": 123,
+  "domain": "rcn.com",
+  "country": "US",
+  "hostnames": [
+   "southloopden03.s.subnet.rcn.com",
+   "clearlyinsur01.c.subnet.rcn.com",
+   "johnstowner1708.j.subnet.rcn.com",
+   "feehotel09.f.subnet.rcn.com",
+   "amwax103.a.subnet.rcn.com",
+   "staybridge105.s.subnet.rcn.com"
+  ],
+  "page_titles": [
+   "IIS Windows Server",
+   "SonicWall Network Security Login",
+   "Not Found",
+   "Welcome to nginx!"
+  ],
+  "cert_org": [
+   "VMware, Inc",
+   "Aruba Networks",
+   "HTTPS Management Certificate for SonicWALL (self-signed)"
+  ],
+  "network_owner": [
+   "Grande Communications Networks, LLC",
+   "For all abuse issues, please contact abuse@rcn.com",
+   "RCN"
+  ],
+  "evidence": [
+   "ot_medical_exposed: fox",
+   "kev_ransomware: CVE-2021-40438",
+   "end_of_life: Microsoft IIS httpd"
+  ]
+ },
+ {
+  "id": 128,
+  "domain": "zun.com",
+  "country": "HK",
+  "hostnames": [
+   "zun.com"
+  ],
+  "page_titles": [
+   "Bad Request",
+   "IIS7",
+   "Metrics",
+   "IIS Windows Server"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "Tisson Ritar Technology Limited",
+   "ZUN CLOUD LIMITED"
+  ],
+  "evidence": [
+   "rdp_exposed: port 3389",
+   "kev: CVE-2024-38475",
+   "end_of_life: Remote Desktop Protocol"
+  ]
+ },
+ {
+  "id": 133,
+  "domain": "profu112.ro",
+  "country": "RO",
+  "hostnames": [
+   "www.profu112.ro"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "Institutul National de Cercetare-Dezvoltare in informatica - ICI Bucuresti"
+  ],
+  "evidence": [
+   "open_data: ftp"
+  ]
+ },
+ {
+  "id": 138,
+  "domain": "telone.co.zw",
+  "country": "ZW",
+  "hostnames": [
+   "16.209.telone.co.zw",
+   "16.81.telone.co.zw",
+   "16.45.telone.co.zw",
+   "16.200.telone.co.zw",
+   "16.183.telone.co.zw",
+   "16.77.telone.co.zw"
+  ],
+  "page_titles": [
+   " 404 Not Found\r\n",
+   "RouterOS router configuration page",
+   "WorldClient",
+   "Login to Webmin"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "Telone PVT Ltd - Telone PVT Ltd",
+   "TelOne Zimbabwe Pvt Limited",
+   "BYSKMER-INVESTMENTS"
+  ],
+  "evidence": [
+   "rdp_exposed: port 3389",
+   "telnet_exposed: port 23",
+   "end_of_life: MySQL"
+  ]
+ },
+ {
+  "id": 143,
+  "domain": "ethgen.ch",
+  "country": "DE",
+  "hostnames": [
+   "tschil.ethgen.ch"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "Hetzner Online GmbH"
+  ],
+  "evidence": [
+   "open_data: ftp"
+  ]
+ },
+ {
+  "id": 148,
+  "domain": "cloudserver.in.net",
+  "country": "FI",
+  "hostnames": [
+   "email.cloudserver.in.net"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "Hetzner Online GmbH"
+  ],
+  "evidence": [
+   "open_data: ftp"
+  ]
+ }
+]

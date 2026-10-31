@@ -1,0 +1,4 @@
+duckdb==2.0.0
+tldextract>=5.1
+anthropic>=0.40
+openpyxl>=3.1

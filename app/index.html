@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Exposure Radar</title>
+<style>
+:root{
+  --bg:#f6f7f9;--panel:#ffffff;--ink:#14171c;--muted:#5d6673;--line:#e3e6eb;--accent:#2f5bea;
+  --p1:#c92a2a;--p1bg:#fdecec;--p2:#b35c00;--p2bg:#fff3e2;--p3:#4a5563;--p3bg:#eef0f3;--ok:#1d7a46;--okbg:#e6f5ec;
+  --bar:#2f5bea;--chip:#eef1f6;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0f1216;--panel:#171b21;--ink:#e8ebef;--muted:#99a2ae;--line:#2a3039;--accent:#7b9bff;
+  --p1:#ff8787;--p1bg:#3a1d1f;--p2:#ffb366;--p2bg:#382a17;--p3:#b5bdc8;--p3bg:#252b33;--ok:#6fd49b;--okbg:#18301f;
+  --bar:#7b9bff;--chip:#232934;}}
+:root[data-theme="dark"]{
+  --bg:#0f1216;--panel:#171b21;--ink:#e8ebef;--muted:#99a2ae;--line:#2a3039;--accent:#7b9bff;
+  --p1:#ff8787;--p1bg:#3a1d1f;--p2:#ffb366;--p2bg:#382a17;--p3:#b5bdc8;--p3bg:#252b33;--ok:#6fd49b;--okbg:#18301f;
+  --bar:#7b9bff;--chip:#232934;}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:14px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{padding:18px 20px 10px;border-bottom:1px solid var(--line);background:var(--panel)}
+h1{font-size:18px;margin:0 0 2px}
+.sub{color:var(--muted);font-size:13px}
+.kpis{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+.kpi{background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:8px 12px;min-width:120px}
+.kpi b{display:block;font-size:18px}
+.kpi span{color:var(--muted);font-size:12px}
+nav{display:flex;gap:4px;padding:0 20px;background:var(--panel);border-bottom:1px solid var(--line);overflow-x:auto}
+nav button{border:0;background:none;color:var(--muted);padding:10px 12px;font:inherit;cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap}
+nav button.on{color:var(--ink);border-bottom-color:var(--accent);font-weight:600}
+main{padding:16px 20px;max-width:1400px;margin:0 auto}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px;align-items:center}
+input,select{background:var(--panel);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:7px 9px;font:inherit}
+input[type=search]{min-width:220px;flex:1}
+label.chk{display:flex;gap:5px;align-items:center;color:var(--muted)}
+button.btn{background:var(--accent);color:#fff;border:0;border-radius:6px;padding:8px 12px;font:inherit;cursor:pointer}
+.count{color:var(--muted);font-size:13px;margin:0 0 8px}
+.tablewrap{overflow-x:auto;background:var(--panel);border:1px solid var(--line);border-radius:8px}
+table{border-collapse:collapse;width:100%;min-width:820px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;color:var(--muted);font-weight:600;cursor:pointer;user-select:none;white-space:nowrap}
+tr.row{cursor:pointer}tr.row:hover td{background:var(--bg)}
+.name{font-weight:600}.dom{color:var(--muted);font-size:12px}
+.tier{display:inline-block;padding:2px 7px;border-radius:10px;font-size:12px;font-weight:600;white-space:nowrap}
+.t1{background:var(--p1bg);color:var(--p1)}.t2{background:var(--p2bg);color:var(--p2)}.t3{background:var(--p3bg);color:var(--p3)}
+.chip{display:inline-block;background:var(--chip);border-radius:4px;padding:1px 6px;margin:1px 3px 1px 0;font-size:12px;white-space:nowrap}
+.bar{height:6px;background:var(--line);border-radius:3px;width:90px;margin-top:4px}.bar i{display:block;height:100%;background:var(--bar);border-radius:3px}
+.num{font-variant-numeric:tabular-nums}
+.drawer{position:fixed;top:0;right:0;height:100%;width:min(560px,100%);background:var(--panel);border-left:1px solid var(--line);box-shadow:-8px 0 24px rgba(0,0,0,.12);transform:translateX(105%);transition:transform .18s;overflow-y:auto;z-index:10;padding:18px}
+.drawer.open{transform:none}
+.drawer h2{margin:0 0 2px;font-size:18px}
+.drawer h3{font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);margin:18px 0 6px}
+.close{float:right;background:none;border:1px solid var(--line);color:var(--ink);border-radius:6px;padding:4px 9px;cursor:pointer}
+.ev{border:1px solid var(--line);border-radius:6px;padding:8px 10px;margin-bottom:6px}
+.ev .top{display:flex;justify-content:space-between;gap:8px}
+.why{color:var(--muted);font-size:12.5px;margin-top:3px}
+.note{background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:8px 10px;font-size:13px;color:var(--muted)}
+.prose{max-width:860px}.prose h2{font-size:17px;margin:22px 0 6px}.prose p,.prose li{color:var(--ink)}
+.prose table{min-width:0;background:var(--panel);border:1px solid var(--line)}
+.pager{display:flex;gap:8px;align-items:center;margin-top:10px;color:var(--muted)}
+.pager button{background:var(--panel);border:1px solid var(--line);color:var(--ink);border-radius:6px;padding:5px 10px;cursor:pointer}
+.hidden{display:none}
+@media (max-width:640px){header,nav,main{padding-left:16px;padding-right:16px}.kpi{min-width:44%}}
+</style>
+</head>
+<body>
+<header>
+  <h1>Exposure Radar <span class="sub">· which organisations need cybersecurity help right now</span></h1>
+  <div class="sub" id="metaLine">Loading…</div>
+  <div class="kpis" id="kpis"></div>
+</header>
+<nav>
+  <button data-tab="ranked" class="on">Ranked accounts</button>
+  <button data-tab="review">Needs review</button>
+  <button data-tab="method">How it works &amp; accuracy</button>
+</nav>
+<main>
+  <section id="listView">
+    <div class="filters">
+      <input type="search" id="q" placeholder="Search company, domain, CVE, product…">
+      <select id="fTier"><option value="">All tiers</option><option>P1 act now</option><option>P2 strong need</option><option>P3 hygiene</option></select>
+      <select id="fInd"><option value="">All industries</option></select>
+      <select id="fCountry"><option value="">All countries</option></select>
+      <select id="fSig"><option value="">Any signal</option></select>
+      <select id="fSize"><option value="">Any size</option><option value="large">Large</option><option value="mid">Mid+</option><option value="small">Small+</option></select>
+      <label class="chk"><input type="checkbox" id="fReg"> Regulated data</label>
+      <button class="btn" id="csv">Export CSV</button>
+    </div>
+    <p class="count" id="count"></p>
+    <div class="tablewrap"><table>
+      <thead><tr>
+        <th data-k="rank">#</th><th data-k="name">Account</th><th data-k="industry">Industry</th><th data-k="country">Country</th>
+        <th data-k="tier">Tier</th><th data-k="priority">Priority ▾</th><th data-k="need">Need</th><th data-k="fit">Fit</th><th>Top evidence</th>
+      </tr></thead>
+      <tbody id="tbody"></tbody>
+    </table></div>
+    <div class="pager"><button id="prev">‹ Prev</button><span id="pageInfo"></span><button id="next">Next ›</button></div>
+  </section>
+  <section id="methodView" class="prose hidden"></section>
+</main>
+<aside class="drawer" id="drawer" aria-label="Account detail"></aside>
+
+<script>
+const SIG = {
+  compromise:["Signs of compromise","Attacker tooling or a known-compromised service was observed on an asset attributed to this organisation."],
+  open_data:["Open data store","Database, FTP or file store reachable without authentication."],
+  kev_ransomware:["Exploited CVE used by ransomware","CVE is on CISA's Known Exploited list and linked to ransomware campaigns."],
+  kev:["Known exploited CVE","CVE on CISA's Known Exploited Vulnerabilities list (weighted by EPSS and whether Shodan verified it)."],
+  rdp_exposed:["Remote Desktop exposed","RDP open to the internet — the most common ransomware entry point."],
+  smb_exposed:["SMB file sharing exposed","Windows file sharing reachable from the internet."],
+  telnet_exposed:["Telnet exposed","Unencrypted remote admin protocol reachable from the internet."],
+  vnc_exposed:["VNC exposed","Remote screen access reachable from the internet."],
+  exchange_onprem:["On-prem Exchange","Self-hosted Exchange server — a frequent target of mass exploitation."],
+  db_exposed:["Database exposed","Database service reachable from the internet (auth status unknown)."],
+  ot_medical_exposed:["OT / medical device exposed","Industrial-control or medical-imaging service reachable from the internet."],
+  end_of_life:["End-of-life software","Software that no longer receives security patches."],
+  open_directory:["Open directory listing","Web server lists files publicly."],
+  expired_cert:["Expired TLS certificate","Sign of unmaintained infrastructure."],
+  legacy_tls:["Legacy TLS/SSL accepted","Accepts TLS 1.0 / SSLv3 — weak crypto and a compliance finding."],
+  self_signed_cert:["Self-signed certificate","Public service using a self-signed certificate."]
+};
+const sigName = s => (SIG[s]||[s])[0];
+let DATA=[], META={}, view='ranked', sortK='priority', sortDir=-1, page=0; const PAGE=50;
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const pct = x => x==null ? '–' : Math.round(x*100)+'%';
+const tierCls = t => t?.startsWith('P1') ? 't1' : t?.startsWith('P2') ? 't2' : 't3';
+
+fetch('data.json').then(r=>r.json()).then(d=>{
+  META=d.meta; DATA=d.accounts;
+  const ranked=DATA.filter(a=>a.status==='ranked');
+  ranked.sort((a,b)=>b.priority-a.priority).forEach((a,i)=>a.rank=i+1);
+  const sc=META.status_counts;
+  $('metaLine').textContent = `${META.raw_rows.toLocaleString()} internet-scan records (${META.scan_window}) → ${META.companies_resolved.toLocaleString()} organisations resolved → ${META.candidates_classified.toLocaleString()} with security need classified`;
+  $('kpis').innerHTML = [
+    [ranked.length,'ranked accounts'],[ranked.filter(a=>a.tier.startsWith('P1')).length,'P1 · act now'],
+    [sc.needs_review,'needs review (abstained)'],[(sc.excluded_provider||0)+(sc.excluded_not_a_business||0),'excluded (ISPs, hosts, parked)']
+  ].map(([v,l])=>`<div class="kpi"><b>${Number(v).toLocaleString()}</b><span>${l}</span></div>`).join('');
+  const uniq = (f) => [...new Set(DATA.map(f).flat().filter(Boolean))].sort();
+  $('fInd').innerHTML += uniq(a=>a.industry).map(v=>`<option>${esc(v)}</option>`).join('');
+  $('fCountry').innerHTML += uniq(a=>a.country).map(v=>`<option>${esc(v)}</option>`).join('');
+  $('fSig').innerHTML += Object.keys(SIG).map(k=>`<option value="${k}">${sigName(k)}</option>`).join('');
+  render(); renderMethod();
+});
+
+function filtered(){
+  const q=$('q').value.trim().toLowerCase(), t=$('fTier').value, ind=$('fInd').value, c=$('fCountry').value,
+        s=$('fSig').value, sz=$('fSize').value, reg=$('fReg').checked;
+  const sizeOk = a => !sz || (sz==='large' ? a.size==='large' : sz==='mid' ? ['mid','large'].includes(a.size) : ['small','mid','large'].includes(a.size));
+  let rows = DATA.filter(a => a.status === (view==='review'?'needs_review':'ranked'))
+    .filter(a => (!t||a.tier===t) && (!ind||a.industry===ind) && (!c||a.country===c) && sizeOk(a) && (!reg||a.regulated)
+      && (!s || (a.evidence||[]).some(e=>e.sig===s || (s==='kev'&&e.sig.startsWith('kev'))))
+      && (!q || [a.name,a.d,a.industry,a.host_org,...(a.evidence||[]).map(e=>e.detail),...(a.assets||[]).map(x=>x.detail)].join(' ').toLowerCase().includes(q)));
+  rows.sort((a,b)=>{const x=a[sortK],y=b[sortK]; return (x>y?1:x<y?-1:0)*sortDir;});
+  return rows;
+}
+function render(){
+  const rows=filtered(); const pages=Math.max(1,Math.ceil(rows.length/PAGE)); page=Math.min(page,pages-1);
+  $('count').textContent = `${rows.length.toLocaleString()} accounts` + (view==='review' ? ' · the model abstained or the evidence is only on shared hosting — verify before outreach' : '');
+  $('tbody').innerHTML = rows.slice(page*PAGE,(page+1)*PAGE).map(a=>`
+    <tr class="row" data-d="${esc(a.d)}">
+      <td class="num">${a.rank??'–'}</td>
+      <td><div class="name">${esc(a.name||a.d)}</div><div class="dom">${esc(a.d)}${a.regulated?' · regulated':''}</div></td>
+      <td>${esc(a.industry)}<div class="dom">${esc(a.type)} · ${esc(a.size)}</div></td>
+      <td>${esc(a.country)}</td>
+      <td><span class="tier ${tierCls(a.tier)}">${esc(a.tier)}</span></td>
+      <td class="num">${pct(a.priority)}<div class="bar"><i style="width:${a.priority*100}%"></i></div></td>
+      <td class="num">${pct(a.need)}</td><td class="num">${pct(a.fit)}</td>
+      <td>${(a.evidence||[]).slice(0,3).map(e=>`<span class="chip">${esc(sigName(e.sig))}</span>`).join('')}</td>
+    </tr>`).join('');
+  $('pageInfo').textContent=`Page ${page+1} / ${pages}`;
+}
+function open(d){
+  const a=DATA.find(x=>x.d===d); if(!a) return;
+  $('drawer').innerHTML = `
+    <button class="close" onclick="document.getElementById('drawer').classList.remove('open')">Close</button>
+    <h2>${esc(a.name||a.d)}</h2>
+    <div class="sub"><a href="https://${esc(a.d)}" target="_blank" rel="noopener noreferrer">${esc(a.d)}</a> · ${esc(a.country)} · ${esc(a.industry)} · ${esc(a.size)}${a.regulated?' · regulated data':''}</div>
+    <p><span class="tier ${tierCls(a.tier)}">${esc(a.tier)}</span> &nbsp; Priority <b>${pct(a.priority)}</b> = need ${pct(a.need)} × fit ${pct(a.fit)}</p>
+    <h3>Why this account</h3>
+    ${(a.evidence||[]).map(e=>`<div class="ev"><div class="top"><b>${esc(sigName(e.sig))}</b><span class="num">${pct(e.p)}</span></div>
+      <div class="why">${esc(e.detail)} · ${e.assets} asset${e.assets>1?'s':''}. ${esc((SIG[e.sig]||[])[1]||'')}</div></div>`).join('')}
+    <div class="note">Each % is the estimated chance the signal reflects a real, actionable need, already discounted for how sure we are the asset belongs to this organisation. Need combines the strongest signal of each type (noisy-OR).</div>
+    <h3>Assets observed (scan 25–26 Oct 2026)</h3>
+    <div class="tablewrap"><table style="min-width:0"><thead><tr><th>Host</th><th>Signal</th><th>Detail</th><th>Attribution</th></tr></thead><tbody>
+    ${(a.assets||[]).map(x=>`<tr><td class="num">${esc(x.ip)}:${x.port}</td><td>${esc(sigName(x.sig))}</td><td>${esc(x.detail)}</td>
+      <td>${x.how==='direct'?'named host':'same IP'}${x.shared>1?` · shared by ${x.shared} orgs`:''}</td></tr>`).join('')}
+    </tbody></table></div>
+    <h3>Who they are (LLM, confidence ${pct(a.cls_conf)})</h3>
+    <p>${esc(a.type)} · ${esc(a.industry)} · ${esc(a.size)}<br><span class="why">${esc(a.cls_reason)}</span></p>
+    <h3>Context</h3>
+    <p class="why">${a.n_ips} IPs / ${a.n_services} services attributed · network owner: ${esc(a.host_org)} · publishes security.txt: ${a.securitytxt?'yes (has a security contact)':'no'} · share of services behind WAF/CDN: ${pct(a.protected)}</p>`;
+  $('drawer').classList.add('open');
+}
+function csv(){
+  const rows=filtered(), cols=['rank','name','d','type','industry','size','regulated','country','tier','priority','need','fit','cls_conf'];
+  const line = r => cols.map(c=>`"${String(r[c]??'').replace(/"/g,'""')}"`).join(',') + `,"${(r.evidence||[]).map(e=>sigName(e.sig)+': '+e.detail).join('; ').replace(/"/g,'""')}"`;
+  const blob=new Blob([cols.join(',')+',evidence\n'+rows.map(line).join('\n')],{type:'text/csv'});
+  const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download=`accounts_${view}.csv`; a.click();
+}
+function renderMethod(){
+  $('methodView').innerHTML = `
+  <h2>The question</h2><p>Out of thousands of organisations, which need cybersecurity help <i>now</i>, and why? This tool turns one month's internet-scan file into a ranked, explainable account list. Every score links to the exact hosts and findings behind it.</p>
+  <h2>Pipeline</h2><ol>
+   <li><b>Extract</b>: one streaming DuckDB pass over the zstd NDJSON (17.6 GB → 14.6M rows → 0.74 GB Parquet, ~3 min on a laptop). Each monthly file is processed independently, so many files per month run in parallel.</li>
+   <li><b>Resolve organisations</b>: the network owner is usually a CDN or cloud provider, so organisations come from named hostnames and certificates. Reverse-DNS and generic server names are discarded, along with 25.9k infrastructure domains. IPs shared by more than 3 organisations count as shared hosting, and their findings barely count toward any one tenant. Honeypot IPs are dropped.</li>
+   <li><b>Signals</b>: compromise evidence, open data stores, KEV/ransomware CVEs (weighted by EPSS and verification), exposed RDP/SMB/telnet, on-prem Exchange, OT/medical, EOL software, open directories, certificate and TLS hygiene.</li>
+   <li><b>Classify (LLM)</b>: Claude Haiku 5.5 reads only the scan evidence and labels organisation type, industry, size, and whether it handles regulated data. It is told to answer "unknown" rather than guess.</li>
+   <li><b>Rank</b>: priority = need × fit. ISPs, hosts, SaaS platforms and parked sites are excluded. Low-confidence or shared-hosting-only accounts go to <i>Needs review</i> instead of the ranked list.</li></ol>
+  <h2>Traps found in the data</h2><ul>
+   <li><b>"*-rat" modules are probe names, not detections.</b> 72k rows, mostly empty banners. Real compromise evidence is a few hundred rows.</li>
+   <li><b>Honeypots</b>: 250k rows tagged, plus untagged look-alikes. A WebLogic/Struts cluster on AWS is 60%+ honeypots.</li>
+   <li><b>Version-inferred CVEs</b>: only ~0.04% are verified. Apache CVE-2021-40438 and CVE-2024-38475 are mostly inferred on CentOS/Ubuntu builds that backport fixes, so they're discounted ×0.3. CVE-2023-44487 (HTTP/2) appears on 173k rows and is ignored. SMBGhost (CVE-2020-0796) is <i>verified</i> on 1,038 hosts and carries full weight.</li>
+   <li><b>CDN edges</b> carry the CDN's software, not the customer's, so they never count as exposures.</li></ul>
+  <h2>Does it work?</h2>
+  <p>Independent labels on a held-out stratified random sample of 150 accounts (75 high-need, 75 mid-need). These were never used to tune prompts or weights. Labels came from web research and do not use the model's output.</p>
+  <table><tr><th>Check</th><th>Result</th></tr>
+   <tr><td>Ranked accounts judged a good prospect</td><td>85% (23/27 decided labels)</td></tr>
+   <tr><td>Excluded accounts that were truly not prospects</td><td>100% (43/43)</td></tr>
+   <tr><td>Good prospects wrongly excluded</td><td>0 / 29 (6 sent to review)</td></tr>
+   <tr><td>LLM organisation type: prospect vs excluded</td><td>92% (n=86); exact type 81%; industry 91% (n=76)</td></tr>
+   <tr><td>LLM confidence vs accuracy</td><td>≥0.8 → 92% (n=49); below 0.8 → 68% (n=37). Confidence separates "sure" from "not sure" but isn't finely calibrated below 0.8, so &lt;0.5 is routed to review.</td></tr>
+   <tr><td>LLM cost</td><td>$3.24 for 13,474 accounts ($0.24 per 1,000)</td></tr></table>
+  <p class="note">Small sample: 85% on 27 has a 95% interval of roughly 67–94%. 57 of 150 accounts could not be identified by the labellers and are excluded from these figures, not counted as wins.</p>
+  <h2>Limits</h2><ul>
+   <li>A single snapshot can't show change over time. With monthly files, "newly exposed since last month" becomes the strongest timing signal, and the pipeline keys assets by ip:port:signal to support that diff.</li>
+   <li>Signal probabilities are expert priors, checked but not fitted. With outcome data (meetings booked, deals) they should be learned.</li>
+   <li>Small businesses on shared hosting are under-represented by design: we abstain rather than blame them for their host's servers.</li></ul>`;
+}
+document.querySelectorAll('nav button').forEach(b=>b.onclick=()=>{
+  document.querySelectorAll('nav button').forEach(x=>x.classList.toggle('on',x===b)); view=b.dataset.tab; page=0;
+  $('listView').classList.toggle('hidden',view==='method'); $('methodView').classList.toggle('hidden',view!=='method'); if(view!=='method') render();
+});
+document.querySelectorAll('th[data-k]').forEach(th=>th.onclick=()=>{const k=th.dataset.k; sortDir = sortK===k ? -sortDir : (['name','industry','country','rank','tier'].includes(k)?1:-1); sortK=k; render();});
+['q','fTier','fInd','fCountry','fSig','fSize','fReg'].forEach(id=>$(id).addEventListener('input',()=>{page=0;render();}));
+$('prev').onclick=()=>{page=Math.max(0,page-1);render();}; $('next').onclick=()=>{page++;render();};
+$('csv').onclick=csv;
+$('tbody').addEventListener('click',e=>{const tr=e.target.closest('tr.row'); if(tr) open(tr.dataset.d);});
+document.addEventListener('keydown',e=>{if(e.key==='Escape') $('drawer').classList.remove('open');});
+</script>
+</body>
+</html>

@@ -1,0 +1,667 @@
+[
+ {
+  "id": 1,
+  "domain": "uiii.ac.id",
+  "country": "ID",
+  "hostnames": [
+   "ulms.uiii.ac.id",
+   "uiii.ac.id",
+   "dev-procurement.uiii.ac.id",
+   "dev-warehouse.uiii.ac.id"
+  ],
+  "page_titles": [
+   "Redirect"
+  ],
+  "cert_org": [
+   "Universitas Islam Internasional Indonesia"
+  ],
+  "network_owner": [
+   "Universitas Islam Internasional Indonesia"
+  ],
+  "evidence": [
+   "end_of_life: nginx",
+   "kev: CVE-2024-38475"
+  ]
+ },
+ {
+  "id": 6,
+  "domain": "pineormnic.com",
+  "country": "FR",
+  "hostnames": [
+   "jerde.pineormnic.com"
+  ],
+  "page_titles": [
+   "Home | 212.83.179.96"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "Scaleway"
+  ],
+  "evidence": [
+   "kev: CVE-2024-38475",
+   "end_of_life: Apache httpd"
+  ]
+ },
+ {
+  "id": 11,
+  "domain": "freffaeina.net",
+  "country": "DE",
+  "hostnames": [
+   "freffaeina.net"
+  ],
+  "page_titles": [
+   "Home | 91.143.80.63"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "EUserv Internet"
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2021-40438",
+   "end_of_life: Apache httpd"
+  ]
+ },
+ {
+  "id": 16,
+  "domain": "umassmed.edu",
+  "country": "US",
+  "hostnames": [
+   "hpcportal.umassmed.edu",
+   "umassmed.edu",
+   "nensp-test.umassmed.edu",
+   "cloud.advancement.umassmed.edu",
+   "uipath-dev.umassmed.edu",
+   "remotevpnv-ext-vip.umassmed.edu"
+  ],
+  "page_titles": [
+   "HPC Portal",
+   "Web Site Not Found",
+   "UiPath Orchestrator ",
+   "Welcome | The Grigorieff Lab"
+  ],
+  "cert_org": [
+   "University of Massachusetts chan Medical School",
+   "Acquia Inc.",
+   "University of Massachusetts Medical School"
+  ],
+  "network_owner": [
+   "Amazon.com, Inc.",
+   "Squarespace, Inc.",
+   "Huron Consulting Group, Inc."
+  ],
+  "evidence": [
+   "exchange_onprem: Exchange",
+   "end_of_life: Apache httpd",
+   "kev_ransomware: CVE-2021-40438"
+  ]
+ },
+ {
+  "id": 21,
+  "domain": "havenplusone.com",
+  "country": "US",
+  "hostnames": [
+   "admin.havenplusone.com"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "Amazon Technologies Inc."
+  ],
+  "evidence": [
+   "end_of_life: nginx",
+   "expired_cert: port 443"
+  ]
+ },
+ {
+  "id": 26,
+  "domain": "silvaorder.com",
+  "country": "US",
+  "hostnames": [
+   "silvaorder.com"
+  ],
+  "page_titles": [
+   "Login | Silva Customer"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "Amazon Technologies Inc."
+  ],
+  "evidence": [
+   "end_of_life: nginx",
+   "legacy_tls: port 443"
+  ]
+ },
+ {
+  "id": 31,
+  "domain": "perfectlanders.com",
+  "country": "US",
+  "hostnames": [
+   "www.perfectlanders.com"
+  ],
+  "page_titles": [
+   "Landing Adventures"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "Amazon Data Services Northern Virginia"
+  ],
+  "evidence": [
+   "end_of_life: nginx",
+   "legacy_tls: port 443"
+  ]
+ },
+ {
+  "id": 36,
+  "domain": "unelink.net",
+  "country": "ES",
+  "hostnames": [
+   "ded-une2397.unelink.net",
+   "ded-une3322.unelink.net",
+   "ded-une3263.unelink.net",
+   "ded-une3116.unelink.net",
+   "virt3283.unelink.net",
+   "virt3790.unelink.net"
+  ],
+  "page_titles": [
+   "Web Site Blocked",
+   "Default Web Site Page",
+   "One moment, please...",
+   "PeloStop  - Inicio"
+  ],
+  "cert_org": [
+   "Plesk",
+   "SomeOrganization",
+   "Super Micro Computer"
+  ],
+  "network_owner": [
+   "AIRE NETWORKS DEL MEDITERRANEO SL UNIPERSONAL",
+   "UNELINK TELECOM, S.A."
+  ],
+  "evidence": [
+   "end_of_life: nginx",
+   "expired_cert: port 443",
+   "legacy_tls: port 443"
+  ]
+ },
+ {
+  "id": 41,
+  "domain": "imgworld.com",
+  "country": "TR",
+  "hostnames": [
+   "munich.imgworld.com"
+  ],
+  "page_titles": [
+   "Home | 185.174.30.43",
+   "Home | 185.106.21.35"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "Netinternet Bilisim Teknolojileri",
+   "Ahmet Onur Guney trading as Onur Bilisim Ve Yazilim Hizmetleri"
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2021-40438",
+   "end_of_life: Apache httpd"
+  ]
+ },
+ {
+  "id": 46,
+  "domain": "vspink.com",
+  "country": "US",
+  "hostnames": [
+   "mta2.e2.vspink.com"
+  ],
+  "page_titles": [
+   "Error"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "Internet Utilities NA LLC"
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2021-40438",
+   "end_of_life: Apache httpd"
+  ]
+ },
+ {
+  "id": 51,
+  "domain": "radwarecloud.app",
+  "country": "US",
+  "hostnames": [
+   "radwarecloud.app"
+  ],
+  "page_titles": [
+   "WAF"
+  ],
+  "cert_org": [
+   "Radware LTD"
+  ],
+  "network_owner": [
+   "Google LLC"
+  ],
+  "evidence": [
+   "end_of_life: nginx",
+   "legacy_tls: port 443"
+  ]
+ },
+ {
+  "id": 56,
+  "domain": "ezsafetech.com",
+  "country": "IN",
+  "hostnames": [
+   "www.ezsafetech.com"
+  ],
+  "page_titles": [
+   "EZ RUMMY"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "Amazon Data Services India"
+  ],
+  "evidence": [
+   "end_of_life: nginx",
+   "expired_cert: port 443",
+   "legacy_tls: port 443"
+  ]
+ },
+ {
+  "id": 61,
+  "domain": "cestparti.net",
+  "country": "FR",
+  "hostnames": [
+   "rt.cestparti.net"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "Hosteur SAS"
+  ],
+  "evidence": [
+   "rdp_exposed: port 3389"
+  ]
+ },
+ {
+  "id": 66,
+  "domain": "medtecjapanreg.com",
+  "country": "JP",
+  "hostnames": [
+   "www.medtecjapanreg.com"
+  ],
+  "page_titles": [
+   "HTTP Server Test Page powered by CentOS"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "SoftBank Corp."
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2021-40438"
+  ]
+ },
+ {
+  "id": 71,
+  "domain": "fat-tail.com",
+  "country": "CN",
+  "hostnames": [
+   "download.fat-tail.com"
+  ],
+  "page_titles": [
+   "Welcome to nginx!"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "Aliyun Computing Co., LTD"
+  ],
+  "evidence": [
+   "end_of_life: nginx",
+   "legacy_tls: port 443"
+  ]
+ },
+ {
+  "id": 76,
+  "domain": "pozoristeterazije.com",
+  "country": "DE",
+  "hostnames": [
+   "bilet.pozoristeterazije.com"
+  ],
+  "page_titles": [
+   "Репертоар"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "Hetzner Online GmbH"
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2021-40438",
+   "end_of_life: Apache httpd"
+  ]
+ },
+ {
+  "id": 81,
+  "domain": "elbedlerog.com",
+  "country": "NL",
+  "hostnames": [
+   "elbedlerog.com"
+  ],
+  "page_titles": [
+   "Home | 95.168.164.249"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "LeaseWeb Netherlands B.V."
+  ],
+  "evidence": [
+   "kev: CVE-2024-38475",
+   "end_of_life: Apache httpd"
+  ]
+ },
+ {
+  "id": 86,
+  "domain": "uq.edu.au",
+  "country": "AU",
+  "hostnames": [
+   "onyx-ext.business.uq.edu.au",
+   "bioinf.public.science.uq.edu.au",
+   "identity-prod-prn.lb.dc.uq.edu.au",
+   "rdp.eait.uq.edu.au",
+   "smp-web02.compute.dc.uq.edu.au",
+   "nectar-database-01.business.uq.edu.au"
+  ],
+  "page_titles": [
+   "Home",
+   "Not Found"
+  ],
+  "cert_org": [
+   "The University of Queensland"
+  ],
+  "network_owner": [
+   "University of Queensland",
+   "Salesforce.com, Inc."
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2021-40438",
+   "rdp_exposed: port 3389",
+   "end_of_life: nginx"
+  ]
+ },
+ {
+  "id": 91,
+  "domain": "jpdl.net",
+  "country": "CN",
+  "hostnames": [
+   "app.jpdl.net"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "Aliyun Computing Co., LTD"
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2019-11043",
+   "end_of_life: nginx",
+   "expired_cert: port 443"
+  ]
+ },
+ {
+  "id": 96,
+  "domain": "wateen.net",
+  "country": "PK",
+  "hostnames": [
+   "WGPON-3915-86.wateen.net",
+   "GPONUser38129-27.wateen.net",
+   "WGPON-39166-220.wateen.net",
+   "GPONUser38255-126.wateen.net",
+   "GPONUser38227-2.wateen.net",
+   "WGPON-39214-25.wateen.net"
+  ],
+  "page_titles": [
+   "WEB SERVICE",
+   "IIS Windows Server",
+   "IIS7",
+   "Apache2 Ubuntu Default Page: It works"
+  ],
+  "cert_org": [
+   "Huawei Technologies Co., Ltd",
+   "Rhino Software, Inc.",
+   "Default Company Ltd"
+  ],
+  "network_owner": [
+   "National Wimax/IMS environment"
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2019-11043",
+   "end_of_life: nginx",
+   "expired_cert: port 21"
+  ]
+ },
+ {
+  "id": 101,
+  "domain": "megaredes.net.br",
+  "country": "BR",
+  "hostnames": [
+   "aut.megaredes.net.br"
+  ],
+  "page_titles": [
+   "MEGA REDES TELECOM"
+  ],
+  "cert_org": [
+   "MK-AUTH"
+  ],
+  "network_owner": [
+   "MEGA REDES TELECOM LTDA"
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2021-40438",
+   "end_of_life: Apache httpd",
+   "expired_cert: port 443"
+  ]
+ },
+ {
+  "id": 106,
+  "domain": "ptrcloud.net",
+  "country": "JP",
+  "hostnames": [
+   "cj.ptr256.ptrcloud.net",
+   "aw.ptr64.ptrcloud.net",
+   "ck.ptr272.ptrcloud.net",
+   "cf.ptr216.ptrcloud.net",
+   "ee.ptr127.ptrcloud.net",
+   "dz.ptr95.ptrcloud.net"
+  ],
+  "page_titles": [
+   "外国人技術者・ベトナム人技能実習生・特定技能人材の受け入れ支援｜ジェイビス株式会社(JAVIHS)",
+   "Plesk Obsidian 18.0.81",
+   "Not Found",
+   "One moment, please..."
+  ],
+  "cert_org": [
+   "SomeOrganization",
+   "MEGA Co., Ltd.",
+   "Odin"
+  ],
+  "network_owner": [
+   "DIX Co., Ltd.",
+   "Japan Network Information Center",
+   "GMO Cloud, K.K."
+  ],
+  "evidence": [
+   "kev: CVE-2014-0160",
+   "end_of_life: Apache httpd",
+   "expired_cert: port 143"
+  ]
+ },
+ {
+  "id": 111,
+  "domain": "washington.edu",
+  "country": "US",
+  "hostnames": [
+   "marvin.mchem.washington.edu",
+   "deep-pgsql.astro.washington.edu",
+   "irb--109.uwer-uwtc-1.infra.washington.edu",
+   "selenium.cirg.washington.edu",
+   "scandium.cirg.washington.edu",
+   "irb--1389.uwer-kne-1.infra.washington.edu"
+  ],
+  "page_titles": [
+   "Nath Lab",
+   "Apache2 Ubuntu Default Page: It works",
+   "Keycloak Administration Console",
+   "Project Sidewalk — DC"
+  ],
+  "cert_org": [
+   "University of Washington",
+   "Tessitura Network"
+  ],
+  "network_owner": [
+   "Amazon.com, Inc.",
+   "University of Washington",
+   "Salesforce, Inc."
+  ],
+  "evidence": [
+   "rdp_exposed: port 3389",
+   "end_of_life: nginx",
+   "kev_ransomware: CVE-2021-40438"
+  ]
+ },
+ {
+  "id": 116,
+  "domain": "zoomlink.net",
+  "country": "DE",
+  "hostnames": [
+   "esxi2.zoomlink.net",
+   "sanadeeq.zoomlink.net",
+   "softdreams.badawy.zoomlink.net"
+  ],
+  "page_titles": [
+   "Default Web Site Page"
+  ],
+  "cert_org": null,
+  "network_owner": [
+   "Hetzner Online GmbH"
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2020-0796",
+   "smb_exposed: port 445"
+  ]
+ },
+ {
+  "id": 121,
+  "domain": "key-cloud.eu",
+  "country": "HU",
+  "hostnames": [
+   "rdp-57.bud.key-cloud.eu",
+   "bud.key-cloud.eu",
+   "rdp-hesztia.bud.key-cloud.eu",
+   "rdp-test2.bud.key-cloud.eu",
+   "rdp-71.bud.key-cloud.eu",
+   "rdp-kvarcasvany.bud.key-cloud.eu"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "Rackforest Zrt.",
+   "RackForest"
+  ],
+  "evidence": [
+   "smb_exposed: port 445",
+   "rdp_exposed: port 3389"
+  ]
+ },
+ {
+  "id": 126,
+  "domain": "chira.de",
+  "country": "DE",
+  "hostnames": [
+   "chira.de"
+  ],
+  "page_titles": null,
+  "cert_org": [
+   "Parallels, GmbH."
+  ],
+  "network_owner": [
+   "ispOne business GmbH"
+  ],
+  "evidence": [
+   "kev: CVE-2012-1823,CVE-2021-40438,CVE-2014-0160",
+   "end_of_life: Apache httpd",
+   "expired_cert: port 443"
+  ]
+ },
+ {
+  "id": 131,
+  "domain": "psru.ac.th",
+  "country": "TH",
+  "hostnames": [
+   "psru.ac.th"
+  ],
+  "page_titles": [
+   "Portainer",
+   "พาไปยัง"
+  ],
+  "cert_org": [
+   "Pibulsongkram Rajabhat University"
+  ],
+  "network_owner": [
+   "Office of Info.Tech. Admin. for Educational Development",
+   "ADVANCED WIRELESS NETWORK COMPANY LIMITED"
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2021-40438",
+   "end_of_life: Apache httpd",
+   "expired_cert: port 443"
+  ]
+ },
+ {
+  "id": 136,
+  "domain": "ip-152-228-223.eu",
+  "country": "FR",
+  "hostnames": [
+   "ns3190409.ip-152-228-223.eu",
+   "ns3190504.ip-152-228-223.eu",
+   "ns3190417.ip-152-228-223.eu"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "OVH SAS"
+  ],
+  "evidence": [
+   "kev_ransomware: CVE-2020-0796",
+   "smb_exposed: port 445",
+   "end_of_life: MySQL"
+  ]
+ },
+ {
+  "id": 141,
+  "domain": "packet-panda.com",
+  "country": "US",
+  "hostnames": [
+   "c2.packet-panda.com"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "DigitalOcean, LLC"
+  ],
+  "evidence": [
+   "compromise: Hak5 Cloud C2",
+   "end_of_life: Hak5 Cloud C2"
+  ]
+ },
+ {
+  "id": 146,
+  "domain": "timl.ca",
+  "country": "US",
+  "hostnames": [
+   "timl.ca"
+  ],
+  "page_titles": null,
+  "cert_org": null,
+  "network_owner": [
+   "HostGator.com LLC"
+  ],
+  "evidence": [
+   "open_data: ftp"
+  ]
+ }
+]

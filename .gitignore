@@ -1,0 +1,7 @@
+*.duckdb
+*.duckdb.wal
+data/
+*.parquet
+anthropic_key.txt
+.env
+__pycache__/
