@@ -2,7 +2,7 @@
 
 A small sales-intelligence platform for a cybersecurity vendor. It turns one month's raw internet-scan file (Shodan banners, 17.6 GB zstd NDJSON, 14.6M records) into a **ranked, explainable account list**. Every score links back to the exact hosts and findings behind it.
 
-**Live app:** _GitHub Pages link_ · **Stack:** DuckDB (SQL), Python, Claude Haiku 5.5, static HTML/JS
+**Live app:** https://mouni2095.github.io/firmable-sales-intel/ · **Stack:** DuckDB (SQL), Python, Claude Haiku 5.5, static HTML/JS
 
 ## Results at a glance
 
